@@ -6,35 +6,37 @@ block content
     p Para realizar este test es requerimiento indispensable escuchar el siguiente audio con auriculares.
     p Solo es posible realizar este test una vez.
     
-    p Por favor indica tu edad:
-    select(id="edad", name='f1_time')
-        -for (var i = 0; i <= 80; ++i) {
-            option(value=i ) #{i}
-        - }
+    p(id="pEdad") Por favor indica tu edad: 
+        select(id="edad", name='f1_time')
+            option(value=-1 ) -
+            -for (var i = 0; i <= 80; ++i) {
+                option(value=i ) #{i}
+            - }
 
-    p Por favor indica tu genero:
-    select(id="genero", name='f1_time')
-        option(value="F") Mujer
-        option(value="M") Hombre
-        option(value="O") Otro
-        option(value="NC") No Contesta
+    p(id="pGenero") Por favor indica tu genero: 
+        select(id="genero", name='f1_time')
+            option(value="-") -
+            option(value="F") Mujer
+            option(value="M") Hombre
+            option(value="O") Otro
+            option(value="NC") No Contesta
 
-    p Por favor indica la región en la que te criaste:
-    select(id="provincia", name='f1_time')
-        option(value="Capital") Capital
-        option(value="Otras") Otras
-        option(value="3") bla
-        option(value="4") bla
+    p(id="pProvincia") Por favor indica la región en la que te criaste: 
+        select(id="provincia", name='f1_time')
+            option(value="-") -
+            option(value="Capital") Capital
+            option(value="Otras") Otras
+            option(value="3") bla
+            option(value="4") bla
     #container.col
-    |
-    |
+    h1 Test De Percepción
 
     //Archivo de audio
     audio(id="myaudio")
         source(src='wavs/1.wav', type='audio/mpeg')
     //Boton
     button(onclick='play()') iniciar
-    p.red(id="alertText")
+        p.red(id="alertText")
     script(type='text/javascript').
         var vecesReproducido = 0;
         var notified = false;
@@ -53,10 +55,10 @@ block content
         }
 
     #container.col
-    p Por favor ingrese la nacionalidad del hablante:
-    input(type='text',id="nac", name='f1_time')
-    p Por favor transcriba el audio:
-    input(type='text',id="trans", name='f1_time')
+    p Por favor ingrese la nacionalidad del hablante: 
+        input(type='text',id="nac", name='f1_time')
+    p Por favor transcriba el audio: 
+        input(type='text',id="trans", name='f1_time')
     #container.col
     button(onclick='submit()') Click
     script(type='text/javascript').
@@ -67,8 +69,56 @@ block content
             var nac = document.getElementById('nac').value
             var trans = document.getElementById('trans').value
 
-            var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad, true );
-            xmlHttp.send( null );
+            var missing = false;
+            if(edad == -1){
+                missingArg("pEdad");
+                missing = true;
+            }
+            if(genero == "-"){
+                missingArg("pGenero");
+                missing = true;
+            }
+            if(provincia == "-"){
+                missingArg("pProvincia");
+                missing = true;
+            }
+            if(missing)
+                return;
+
+            var sub = getCookie("submisionCompleted");
+            if (sub == "") {
+                var xmlHttp = new XMLHttpRequest();
+                xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad, true );
+                xmlHttp.send( null );
+                document.cookie = "submisionCompleted=true";
+                HTMLElementObject.innerHTML = "Gracias por participar!"
+                alert("Gracias por participar!");
+            } else {
+                alert("Ya habías completado la encuesta!");
+            }
             //window.location.href = "http://www.google.com";
+        }
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for(var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        function missingArg(parent){
+            var para = document.createElement("p.red");
+            para.style = "color:red"
+            var node = document.createTextNode("Por favor complete este campo");
+            para.appendChild(node);
+            var element = document.getElementById(parent);
+            if(element.children.length == 1)
+                element.appendChild(para);
+            return;
         }
