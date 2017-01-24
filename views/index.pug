@@ -1,0 +1,74 @@
+extends layout
+
+block content
+    h1 Test De Percepción
+    #container.col
+    p Para realizar este test es requerimiento indispensable escuchar el siguiente audio con auriculares.
+    p Solo es posible realizar este test una vez.
+    
+    p Por favor indica tu edad:
+    select(id="edad", name='f1_time')
+        -for (var i = 0; i <= 80; ++i) {
+            option(value=i ) #{i}
+        - }
+
+    p Por favor indica tu genero:
+    select(id="genero", name='f1_time')
+        option(value="F") Mujer
+        option(value="M") Hombre
+        option(value="O") Otro
+        option(value="NC") No Contesta
+
+    p Por favor indica la región en la que te criaste:
+    select(id="provincia", name='f1_time')
+        option(value="Capital") Capital
+        option(value="Otras") Otras
+        option(value="3") bla
+        option(value="4") bla
+    #container.col
+    |
+    |
+
+    //Archivo de audio
+    audio(id="myaudio")
+        source(src='wavs/1.wav', type='audio/mpeg')
+    //Boton
+    button(onclick='play()') iniciar
+    p.red(id="alertText")
+    script(type='text/javascript').
+        var vecesReproducido = 0;
+        var notified = false;
+        function play(){
+        var oAudio = document.getElementById('myaudio');
+            if (oAudio.paused && vecesReproducido<2) {
+                oAudio.play();
+                vecesReproducido++;
+            }else{
+                if(!notified){
+                    var t = document.createTextNode("Cantidad de reproducciones alcanzada."); 
+                    document.getElementById("alertText").appendChild(t);
+                    notified=true;
+                }
+            }
+        }
+
+    #container.col
+    p Por favor ingrese la nacionalidad del hablante:
+    input(type='text',id="nac", name='f1_time')
+    p Por favor transcriba el audio:
+    input(type='text',id="trans", name='f1_time')
+    #container.col
+    button(onclick='submit()') Click
+    script(type='text/javascript').
+        function submit(){
+            var edad = document.getElementById('edad').value
+            var provincia = document.getElementById('provincia').value
+            var genero = document.getElementById('genero').value
+            var nac = document.getElementById('nac').value
+            var trans = document.getElementById('trans').value
+
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad, true );
+            xmlHttp.send( null );
+            //window.location.href = "http://www.google.com";
+        }
