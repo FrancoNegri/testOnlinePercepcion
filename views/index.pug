@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    h1 Test De Percepción
+    h1 Test De Percepción #{oracionN} #{nivelN} 
     #container.col
     p Para realizar este test es requerimiento indispensable escuchar el siguiente audio con auriculares.
     p Solo es posible realizar este test una vez.
@@ -35,16 +35,18 @@ block content
     audio(id="myaudio")
         source(src='wavs/1.wav', type='audio/mpeg')
     //Boton
-    button(onclick='play()') iniciar
-        p.red(id="alertText")
+    p(id="alertText")
+        button(onclick='play()') iniciar
     script(type='text/javascript').
         var vecesReproducido = 0;
         var notified = false;
         function play(){
         var oAudio = document.getElementById('myaudio');
-            if (oAudio.paused && vecesReproducido<2) {
-                oAudio.play();
-                vecesReproducido++;
+            if (vecesReproducido<2) {
+                if(oAudio.paused){
+                    oAudio.play();
+                    vecesReproducido++;
+                }
             }else{
                 if(!notified){
                     var t = document.createTextNode("Cantidad de reproducciones alcanzada."); 
@@ -63,11 +65,14 @@ block content
     button(onclick='submit()') Click
     script(type='text/javascript').
         function submit(){
-            var edad = document.getElementById('edad').value
-            var provincia = document.getElementById('provincia').value
-            var genero = document.getElementById('genero').value
-            var nac = document.getElementById('nac').value
-            var trans = document.getElementById('trans').value
+            console.log(#{oracionN})
+            console.log(#{nivelN})
+
+            var edad = document.getElementById('edad').value;
+            var provincia = document.getElementById('provincia').value;
+            var genero = document.getElementById('genero').value;
+            var nac = document.getElementById('nac').value;
+            var trans = document.getElementById('trans').value;
 
             var missing = false;
             if(edad == -1){
@@ -88,10 +93,9 @@ block content
             var sub = getCookie("submisionCompleted");
             if (sub == "") {
                 var xmlHttp = new XMLHttpRequest();
-                xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad, true );
+                xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&audio=" + #{oracionN} + "." + #{nivelN}, true );
                 xmlHttp.send( null );
                 document.cookie = "submisionCompleted=true";
-                HTMLElementObject.innerHTML = "Gracias por participar!"
                 alert("Gracias por participar!");
             } else {
                 alert("Ya habías completado la encuesta!");
