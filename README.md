@@ -8,3 +8,5 @@ $ npm install
 Para correr:
 
 $ DEBUG=myapp:* npm start
+
+TODO: separar &audio=" + #{oracionN} + "." + #{nivelN}

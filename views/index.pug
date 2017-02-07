@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    h1 Test De Percepción #{oracionN} #{nivelN} 
+    h1 Test De Percepción
     #container.col
     p Para realizar este test es requerimiento indispensable escuchar el siguiente audio con auriculares.
     p Solo es posible realizar este test una vez.
@@ -24,16 +24,37 @@ block content
     p(id="pProvincia") Por favor indica la región en la que te criaste: 
         select(id="provincia", name='f1_time')
             option(value="-") -
-            option(value="Capital") Capital
-            option(value="Otras") Otras
-            option(value="3") bla
-            option(value="4") bla
+            option(value="Buenos Aires") Buenos Aires
+            option(value="Capital Federal") Capital Federal
+            option(value="Catamarca") Catamarca
+            option(value="Chaco") Chaco
+            option(value="Chubut") Chubut
+            option(value="Córdoba") Córdoba
+            option(value="Corrientes") Corrientes
+            option(value="Entre Ríos") Entre Ríos
+            option(value="Formosa") Formosa
+            option(value="Jujuy") Jujuy
+            option(value="La Pampa") La Pampa
+            option(value="La Rioja") La Rioja
+            option(value="Mendoza") Mendoza
+            option(value="Misiones") Misiones
+            option(value="Neuquén") Neuquén
+            option(value="Río Negro") Río Negro
+            option(value="Salta") Salta
+            option(value="San Juan") San Juan
+            option(value="San Luis") San Luis
+            option(value="Santa Cruz") Santa Cruz
+            option(value="Santa Fe") Santa Fe
+            option(value="Santiago del Estero") Santiago del Estero
+            option(value="Tierra del Fuego") Tierra del Fuego
+            option(value="Tucumán") Tucumán
+            option(value="No soy Argentino") No soy Argentino
     #container.col
     h1 Test De Percepción
 
     //Archivo de audio
     audio(id="myaudio")
-        source(src='wavs/1.wav', type='audio/mpeg')
+        source(src='wavs/' + nivelN + '/_' + oracionN + '.wav', type='audio/mpeg')
     //Boton
     p(id="alertText")
         button(onclick='play()') iniciar
@@ -57,9 +78,9 @@ block content
         }
 
     #container.col
-    p Por favor ingrese la nacionalidad del hablante: 
+    p Ingrese la nacionalidad del hablante: 
         input(type='text',id="nac", name='f1_time')
-    p Por favor transcriba el audio: 
+    p Transcriba el audio: 
         input(type='text',id="trans", name='f1_time')
     #container.col
     button(onclick='submit()') Click

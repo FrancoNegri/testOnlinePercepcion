@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   //Determino una oracion
   var oracion = Math.floor(Math.random() * 10) + 1;
   //Determino un nivel
-  var nivel = Math.floor(Math.random() * 5) + 1;
+  var nivel = Math.floor(Math.random() * 5);
   //Renderizo pag
   res.render('index', { oracionN: oracion, nivelN: nivel});
 });
