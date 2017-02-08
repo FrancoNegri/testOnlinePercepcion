@@ -114,14 +114,13 @@ block content
             var sub = getCookie("submisionCompleted");
             if (sub == "") {
                 var xmlHttp = new XMLHttpRequest();
-                xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&audio=" + #{oracionN} + "." + #{nivelN}, true );
+                xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + #{oracionN} + "&nivel=" + #{nivelN}, true );
                 xmlHttp.send( null );
                 document.cookie = "submisionCompleted=true";
-                alert("Gracias por participar!");
+            	document.body.innerHTML="Gracias por participar!";
             } else {
-                alert("Ya habías completado la encuesta!");
+            	document.body.innerHTML="Ya habías completado la encuesta!";
             }
-            //window.location.href = "http://www.google.com";
         }
         function getCookie(cname) {
             var name = cname + "=";
