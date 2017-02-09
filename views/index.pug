@@ -1,148 +1,90 @@
 extends layout
 
 block content
+    script
+      include scripts.js
+    body(onload="checkIfCompleted();")
     h1 Test De Percepción
-    #container1.input-group
-    p Para realizar este test es requerimiento indispensable escuchar el siguiente audio con auriculares.
-    p Solo es posible realizar este test una vez.
+    #infoGral
+      li Para realizar este test es requerimiento indispensable escuchar el siguiente audio con auriculares.
+      li Solo es posible realizar este test una vez.
+      li La duración del mismo es menor a 5 minutos.
+    #datosPersonales.btn-group.bootstrap-select
+      h2 Datos Personales:
+      p Los datos aquí guardados solo se usarán para generar métricas, los datos no quedarán asociados.
+      form.form-horizontal
+        div.form-group
+          label.col-sm-2.control-label(id="pEdad") Edad:
+          #s.btn-group.bootstrap-select
+            select(id="edad", name='f1_time').btn.dropdown-toggle.btn-default
+                option(value=-1 ) -
+                -for (var i = 0; i <= 80; ++i) {
+                    option(value=i ) #{i}
+                - }
 
-    p(id="pEdad") Por favor indica tu edad:
-        select(id="edad", name='f1_time').dropup
-            option(value=-1 ) -
-            -for (var i = 0; i <= 80; ++i) {
-                option(value=i ) #{i}
-            - }
+        div.form-group
+          label.col-sm-2.control-label Genero:
+          #s.btn-group.bootstrap-select
+            select(id="genero", name='f1_time').btn.dropdown-toggle.btn-default
+                option(value="-") -
+                option(value="F") Mujer
+                option(value="M") Hombre
+                option(value="O") Otro
+                option(value="NC") No Contesta
 
-    p(id="pGenero") Por favor indica tu genero:
-        select(id="genero", name='f1_time')
-            option(value="-") -
-            option(value="F") Mujer
-            option(value="M") Hombre
-            option(value="O") Otro
-            option(value="NC") No Contesta
-
-    p(id="pProvincia") Por favor indica la región en la que te criaste:
-        select(id="provincia", name='f1_time')
-            option(value="-") -
-            option(value="Buenos Aires") Buenos Aires
-            option(value="Capital Federal") Capital Federal
-            option(value="Catamarca") Catamarca
-            option(value="Chaco") Chaco
-            option(value="Chubut") Chubut
-            option(value="Córdoba") Córdoba
-            option(value="Corrientes") Corrientes
-            option(value="Entre Ríos") Entre Ríos
-            option(value="Formosa") Formosa
-            option(value="Jujuy") Jujuy
-            option(value="La Pampa") La Pampa
-            option(value="La Rioja") La Rioja
-            option(value="Mendoza") Mendoza
-            option(value="Misiones") Misiones
-            option(value="Neuquén") Neuquén
-            option(value="Río Negro") Río Negro
-            option(value="Salta") Salta
-            option(value="San Juan") San Juan
-            option(value="San Luis") San Luis
-            option(value="Santa Cruz") Santa Cruz
-            option(value="Santa Fe") Santa Fe
-            option(value="Santiago del Estero") Santiago del Estero
-            option(value="Tierra del Fuego") Tierra del Fuego
-            option(value="Tucumán") Tucumán
-            option(value="No soy Argentino") No soy Argentino
-    #container2.col
-    h1 Test De Percepción
-
-    //Archivo de audio
-    audio(id="myaudio")
-        source(src='wavs/' + nivelN + '/_' + oracionN + '.wav', type='audio/mpeg')
-    //Boton
-    p(id="alertText")
-        button(onclick='play()') iniciar
-    script(type='text/javascript').
-        var vecesReproducido = 0;
-        var notified = false;
-        function play(){
-        var oAudio = document.getElementById('myaudio');
-            if (vecesReproducido<2) {
-                if(oAudio.paused){
-                    oAudio.play();
-                    vecesReproducido++;
-                }
-            }else{
-                if(!notified){
-                    var t = document.createTextNode("Cantidad de reproducciones alcanzada.");
-                    document.getElementById("alertText").appendChild(t);
-                    notified=true;
-                }
-            }
-        }
-
-    #container3.input-group
-      label Ingrese la nacionalidad del hablante:
-          input(type='text',id="nac", name='f1_time')
-      p Transcriba el audio:
-          input(type='text',id="trans", name='f1_time').form-control
-      #container4.col
-      button(onclick='submit()') Click
-      script(type='text/javascript').
-          function submit(){
-              console.log(#{oracionN})
-              console.log(#{nivelN})
-
-              var edad = document.getElementById('edad').value;
-              var provincia = document.getElementById('provincia').value;
-              var genero = document.getElementById('genero').value;
-              var nac = document.getElementById('nac').value;
-              var trans = document.getElementById('trans').value;
-
-              var missing = false;
-              if(edad == -1){
-                  missingArg("pEdad");
-                  missing = true;
-              }
-              if(genero == "-"){
-                  missingArg("pGenero");
-                  missing = true;
-              }
-              if(provincia == "-"){
-                  missingArg("pProvincia");
-                  missing = true;
-              }
-              if(missing)
-                  return;
-
-              var sub = getCookie("submisionCompleted");
-              if (sub == "") {
-                  var xmlHttp = new XMLHttpRequest();
-                  xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + #{oracionN} + "&nivel=" + #{nivelN}, true );
-                  xmlHttp.send( null );
-                  document.cookie = "submisionCompleted=true";
-              	document.body.innerHTML="Gracias por participar!";
-              } else {
-              	document.body.innerHTML="Ya habías completado la encuesta!";
-              }
-          }
-          function getCookie(cname) {
-              var name = cname + "=";
-              var ca = document.cookie.split(';');
-              for(var i = 0; i < ca.length; i++) {
-                  var c = ca[i];
-                  while (c.charAt(0) == ' ') {
-                      c = c.substring(1);
-                  }
-                  if (c.indexOf(name) == 0) {
-                      return c.substring(name.length, c.length);
-                  }
-              }
-              return "";
-          }
-          function missingArg(parent){
-              var para = document.createElement("p.red");
-              para.style = "color:red"
-              var node = document.createTextNode("Por favor complete este campo");
-              para.appendChild(node);
-              var element = document.getElementById(parent);
-              if(element.children.length == 1)
-                  element.appendChild(para);
-              return;
-          }
+        div.form-group
+          label.col-sm-2.control-label Región en la que te criaste:
+          div.btn-group.bootstrap-select
+            select(id="provincia", name='f1_time').btn.dropdown-toggle.btn-default
+                option(value="-") -
+                option(value="Buenos Aires") Buenos Aires
+                option(value="Capital Federal") Capital Federal
+                option(value="Catamarca") Catamarca
+                option(value="Chaco") Chaco
+                option(value="Chubut") Chubut
+                option(value="Córdoba") Córdoba
+                option(value="Corrientes") Corrientes
+                option(value="Entre Ríos") Entre Ríos
+                option(value="Formosa") Formosa
+                option(value="Jujuy") Jujuy
+                option(value="La Pampa") La Pampa
+                option(value="La Rioja") La Rioja
+                option(value="Mendoza") Mendoza
+                option(value="Misiones") Misiones
+                option(value="Neuquén") Neuquén
+                option(value="Río Negro") Río Negro
+                option(value="Salta") Salta
+                option(value="San Juan") San Juan
+                option(value="San Luis") San Luis
+                option(value="Santa Cruz") Santa Cruz
+                option(value="Santa Fe") Santa Fe
+                option(value="Santiago del Estero") Santiago del Estero
+                option(value="Tierra del Fuego") Tierra del Fuego
+                option(value="Tucumán") Tucumán
+                option(value="No soy Argentino") No soy Argentino
+    button.btn.btn-default(onclick='guardar()') Guardar
+    #instrucciones.hide
+      h2 Instrucciones
+      ul
+        li Se le presentará un audio de alguien hablando, el audio dura aproximadamente 3 segundos.
+        li Se le pedirá que transcriba el audio y que indique la nacionalidad del hablante.
+        li Podrá escuar el audio solamente dos veces.
+        li Recuerde utilizar auriculares!
+        li Si solo logró entender palabras sueltas, no importa! Anotelas en el orden que crea correcto.
+      button.btn.btn-default(onclick='entendido()') Entendido!
+    #experimento.hide
+      h2 Experimento:
+      //Archivo de audio
+      audio(id="myaudio")
+          source(src='wavs/' + nivelN + '/_' + oracionN + '.wav', type='audio/mpeg')
+      button.btn.btn-success(id="playExp",onclick='play()') Escuchar
+      form.form-horizontal
+        div.form-group  
+          label.col-sm-2.control-label Transcripción:
+          div.col-sm-6
+              input.form-control(type='text',id="trans", name='f1_time').form-control
+        div.form-group
+          label.col-sm-2.control-label Nacionalidad del hablante:
+          div.col-sm-6
+              input.form-control(type='text',id="nac", name='f1_time')
+      button.btn.btn-default(onclick='submit(' + oracionN +',' + nivelN + ')') Guardar!
