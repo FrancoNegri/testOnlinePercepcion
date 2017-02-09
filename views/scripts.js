@@ -1,25 +1,9 @@
   function submit(oracion, nivel){
+      var nac = document.getElementById('nac').value;
+      var trans = document.getElementById('trans').value;
       var edad = document.getElementById('edad').value;
       var provincia = document.getElementById('provincia').value;
       var genero = document.getElementById('genero').value;
-      var nac = document.getElementById('nac').value;
-      var trans = document.getElementById('trans').value;
-
-      var missing = false;
-      if(edad == -1){
-          missingArg("pEdad");
-          missing = true;
-      }
-      if(genero == "-"){
-          missingArg("pGenero");
-          missing = true;
-      }
-      if(provincia == "-"){
-          missingArg("pProvincia");
-          missing = true;
-      }
-      if(missing)
-          return;
 
       checkIfCompleted();  
       var xmlHttp = new XMLHttpRequest();
@@ -48,8 +32,7 @@
       var node = document.createTextNode("Por favor complete este campo");
       para.appendChild(node);
       var element = document.getElementById(parent);
-      if(element.children.length == 1)
-          element.appendChild(para);
+      //add error
       return;
   }
 
@@ -62,6 +45,24 @@ function checkIfCompleted(){
 }
 
 function guardar(){
+  var edad = document.getElementById('edad').value;
+  var provincia = document.getElementById('provincia').value;
+  var genero = document.getElementById('genero').value;
+  var missing = false;
+  if(edad == -1){
+      missingArg("pEdad");
+      missing = true;
+  }
+  if(genero == "-"){
+      missingArg("pGenero");
+      missing = true;
+  }
+  if(provincia == "-"){
+      missingArg("pProvincia");
+      missing = true;
+  }
+  if(missing)
+      return;
   var datosPersonales = document.getElementById("datosPersonales");
   datosPersonales.className = "hide";
   var infoGral = document.getElementById("infoGral");
