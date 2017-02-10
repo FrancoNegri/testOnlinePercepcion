@@ -8,20 +8,52 @@ var db = new sqlite3.Database('database.db')
 
 var stmt = db.prepare('INSERT INTO results VALUES (?,?,?,?,?,?,?,?)')
 
-/* GET users listing. */
 router.get('/', function(req, res, next) {
+  
+  var error = false;
+  if(req.query.oracion && req.query.nivel && req.query.edad){
+    var oracion = parseInt(unescape(req.query.oracion));
+    var nivel = parseInt(unescape(req.query.nivel));
+    var edad = parseInt(unescape(req.query.edad));
+    if(isNaN(oracion) || isNaN(nivel) || isNaN(edad)){
+      error = true;
+    }
+  }else{
+    error = true;
+  }
+  if(req.query.genero && req.query.provincia && req.query.nac && req.query.trans){
+    var ip = ipV4StringToInteger(req.hostname);
+    var genero = unescape(req.query.genero);
+    var provincia = unescape(req.query.provincia);
+    var nac = unescape(req.query.nac);
+    var trans = unescape(req.query.trans);
+  }else{
+    error = true;
+  }
+  if(error){
+    console.log("invalid data!");
+    res.send('invalid');
+    return;
+  }
+  console.log( "Upcoming response from: ")
+  console.log( req.hostname)
+  console.log(ip)
+  console.log(" oracion: ")
+  console.log(oracion)
+  console.log(" nivel: ")
+  console.log(nivel)
+  console.log(" genero: ")
+  console.log(genero)
+  console.log(" edad: ")
+  console.log(edad)
+  console.log(" provincia: ")
+  console.log(provincia)
+  console.log(" LANG: ")
+  console.log(nac)
+  console.log(" transcription: ")
+  console.log(trans)
 
-  //res.status(status).send("Hello world, this should be sent inmediately");
-  var ip = req.hostname;
-  var genero = unescape(req.query.genero);
-  var edad = unescape(req.query.edad);
-  var provincia = unescape(req.query.provincia);
-  var trans = unescape(req.query.trans);
-  var nac = unescape(req.query.nac);
-  var oracion = unescape(req.query.oracion);
-  var nivel = unescape(req.query.nivel);
-  console.log( "Upcoming response from: " + ip + " oracion: " + oracion + " nivel: " + nivel + " audio: "+ audio + " genero: " + genero + " provincia: " + provincia + " transcription: " + trans + " LANG: " + nac + " audio: " + audio );
-  //CREATE TABLE results(IP INT,ORACION INT, NIVEL INT,EDAD INT,GENERO TEXT,PROVINCIA TEXT,LANG TEXT, TRANSC TEXT);
+  //CREATE TABLE results(IP INT PRIMARY KEY,ORACION INT, NIVEL INT,EDAD INT,GENERO TEXT,PROVINCIA TEXT,LANG TEXT, TRANSC TEXT);
   //IP como int? ver mejor esto...
   // que pasa si alguien pone "====" en un formulario
   stmt.run(ip,oracion,nivel, edad,genero,provincia,nac,trans );
