@@ -7,8 +7,7 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var response = require('./routes/response');
-var helmet = require('helmet')
-
+var helmet = require('helmet');
 var app = express();
 
 // view engine setup

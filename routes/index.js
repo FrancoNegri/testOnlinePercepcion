@@ -10,5 +10,5 @@ router.get('/', function(req, res, next) {
   //Renderizo pag
   res.render('index', { oracionN: oracion, nivelN: nivel});
 });
- 
+
 module.exports = router;

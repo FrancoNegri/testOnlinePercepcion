@@ -2,18 +2,18 @@ extends layout
 
 block content
     h1 Test De Percepción
-    #container.col
+    #container1.input-group
     p Para realizar este test es requerimiento indispensable escuchar el siguiente audio con auriculares.
     p Solo es posible realizar este test una vez.
-    
-    p(id="pEdad") Por favor indica tu edad: 
-        select(id="edad", name='f1_time')
+
+    p(id="pEdad") Por favor indica tu edad:
+        select(id="edad", name='f1_time').dropup
             option(value=-1 ) -
             -for (var i = 0; i <= 80; ++i) {
                 option(value=i ) #{i}
             - }
 
-    p(id="pGenero") Por favor indica tu genero: 
+    p(id="pGenero") Por favor indica tu genero:
         select(id="genero", name='f1_time')
             option(value="-") -
             option(value="F") Mujer
@@ -21,7 +21,7 @@ block content
             option(value="O") Otro
             option(value="NC") No Contesta
 
-    p(id="pProvincia") Por favor indica la región en la que te criaste: 
+    p(id="pProvincia") Por favor indica la región en la que te criaste:
         select(id="provincia", name='f1_time')
             option(value="-") -
             option(value="Buenos Aires") Buenos Aires
@@ -49,7 +49,7 @@ block content
             option(value="Tierra del Fuego") Tierra del Fuego
             option(value="Tucumán") Tucumán
             option(value="No soy Argentino") No soy Argentino
-    #container.col
+    #container2.col
     h1 Test De Percepción
 
     //Archivo de audio
@@ -70,79 +70,79 @@ block content
                 }
             }else{
                 if(!notified){
-                    var t = document.createTextNode("Cantidad de reproducciones alcanzada."); 
+                    var t = document.createTextNode("Cantidad de reproducciones alcanzada.");
                     document.getElementById("alertText").appendChild(t);
                     notified=true;
                 }
             }
         }
 
-    #container.col
-    p Ingrese la nacionalidad del hablante: 
-        input(type='text',id="nac", name='f1_time')
-    p Transcriba el audio: 
-        input(type='text',id="trans", name='f1_time')
-    #container.col
-    button(onclick='submit()') Click
-    script(type='text/javascript').
-        function submit(){
-            console.log(#{oracionN})
-            console.log(#{nivelN})
+    #container3.input-group
+      label Ingrese la nacionalidad del hablante:
+          input(type='text',id="nac", name='f1_time')
+      p Transcriba el audio:
+          input(type='text',id="trans", name='f1_time').form-control
+      #container4.col
+      button(onclick='submit()') Click
+      script(type='text/javascript').
+          function submit(){
+              console.log(#{oracionN})
+              console.log(#{nivelN})
 
-            var edad = document.getElementById('edad').value;
-            var provincia = document.getElementById('provincia').value;
-            var genero = document.getElementById('genero').value;
-            var nac = document.getElementById('nac').value;
-            var trans = document.getElementById('trans').value;
+              var edad = document.getElementById('edad').value;
+              var provincia = document.getElementById('provincia').value;
+              var genero = document.getElementById('genero').value;
+              var nac = document.getElementById('nac').value;
+              var trans = document.getElementById('trans').value;
 
-            var missing = false;
-            if(edad == -1){
-                missingArg("pEdad");
-                missing = true;
-            }
-            if(genero == "-"){
-                missingArg("pGenero");
-                missing = true;
-            }
-            if(provincia == "-"){
-                missingArg("pProvincia");
-                missing = true;
-            }
-            if(missing)
-                return;
+              var missing = false;
+              if(edad == -1){
+                  missingArg("pEdad");
+                  missing = true;
+              }
+              if(genero == "-"){
+                  missingArg("pGenero");
+                  missing = true;
+              }
+              if(provincia == "-"){
+                  missingArg("pProvincia");
+                  missing = true;
+              }
+              if(missing)
+                  return;
 
-            var sub = getCookie("submisionCompleted");
-            if (sub == "") {
-                var xmlHttp = new XMLHttpRequest();
-                xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + #{oracionN} + "&nivel=" + #{nivelN}, true );
-                xmlHttp.send( null );
-                document.cookie = "submisionCompleted=true";
-            	document.body.innerHTML="Gracias por participar!";
-            } else {
-            	document.body.innerHTML="Ya habías completado la encuesta!";
-            }
-        }
-        function getCookie(cname) {
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-            for(var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') {
-                    c = c.substring(1);
-                }
-                if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                }
-            }
-            return "";
-        }
-        function missingArg(parent){
-            var para = document.createElement("p.red");
-            para.style = "color:red"
-            var node = document.createTextNode("Por favor complete este campo");
-            para.appendChild(node);
-            var element = document.getElementById(parent);
-            if(element.children.length == 1)
-                element.appendChild(para);
-            return;
-        }
+              var sub = getCookie("submisionCompleted");
+              if (sub == "") {
+                  var xmlHttp = new XMLHttpRequest();
+                  xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + #{oracionN} + "&nivel=" + #{nivelN}, true );
+                  xmlHttp.send( null );
+                  document.cookie = "submisionCompleted=true";
+              	document.body.innerHTML="Gracias por participar!";
+              } else {
+              	document.body.innerHTML="Ya habías completado la encuesta!";
+              }
+          }
+          function getCookie(cname) {
+              var name = cname + "=";
+              var ca = document.cookie.split(';');
+              for(var i = 0; i < ca.length; i++) {
+                  var c = ca[i];
+                  while (c.charAt(0) == ' ') {
+                      c = c.substring(1);
+                  }
+                  if (c.indexOf(name) == 0) {
+                      return c.substring(name.length, c.length);
+                  }
+              }
+              return "";
+          }
+          function missingArg(parent){
+              var para = document.createElement("p.red");
+              para.style = "color:red"
+              var node = document.createTextNode("Por favor complete este campo");
+              para.appendChild(node);
+              var element = document.getElementById(parent);
+              if(element.children.length == 1)
+                  element.appendChild(para);
+              return;
+          }
