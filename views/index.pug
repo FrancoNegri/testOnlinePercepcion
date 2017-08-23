@@ -1,6 +1,7 @@
 extends layout
 
 block content
+  #all.hide
     script
       include scripts.js
     body(onload="checkIfCompleted();")
@@ -13,16 +14,18 @@ block content
       h2 Datos Personales:
       p Los datos aquí guardados solo se usarán para generar métricas, los datos no quedarán asociados.
       form.form-horizontal
-        div.form-group
+        #edadDiv.form-group
           label.col-sm-2.control-label(id="pEdad") Edad:
           #s.btn-group.bootstrap-select
             select(id="edad", name='f1_time').btn.dropdown-toggle.btn-default
                 option(value=-1 ) -
-                -for (var i = 0; i <= 80; ++i) {
-                    option(value=i ) #{i}
+                -for (var i = 0; i <= 12; ++i) {
+                    option(value= i) #{i*5 +16 } - #{(i+1)*5+15}
                 - }
-
-        div.form-group
+                option(value=81) +80
+          #edadAlert(class='hide')
+            p Es necesario completar este campo
+        #generoDiv.form-group
           label.col-sm-2.control-label Genero:
           #s.btn-group.bootstrap-select
             select(id="genero", name='f1_time').btn.dropdown-toggle.btn-default
@@ -31,9 +34,10 @@ block content
                 option(value="M") Hombre
                 option(value="O") Otro
                 option(value="NC") No Contesta
-
-        div.form-group
-          label.col-sm-2.control-label Región en la que pasaste la mayor parte de tu infancia:
+          #generoAlert(class='hide')
+            p Es necesario completar este campo
+        #provinciaDiv.form-group
+          label.col-sm-4.control-label Región en la que pasaste la mayor parte de tu infancia:
           div.btn-group.bootstrap-select
             select(id="provincia", name='f1_time').btn.dropdown-toggle.btn-default
                 option(value="-") -
@@ -62,7 +66,10 @@ block content
                 option(value="Tierra del Fuego") Tierra del Fuego
                 option(value="Tucumán") Tucumán
                 option(value="No soy Argentino") No soy Argentino
-      button.btn.btn-default(onclick='guardar()') Guardar
+        #provinciaAlert(class='hide')
+          p Es necesario completar este campo    
+      #buttonDiv
+        button.btn.btn-default(onclick='guardar()') Guardar
     #instrucciones.hide
       h2 Instrucciones
       ul
@@ -78,6 +85,7 @@ block content
       audio(id="myaudio")
           source(src='wavs/' + nivelN + '/_' + oracionN + '.wav', type='audio/mpeg')
       button.btn.btn-success(id="playExp",onclick='play()') Escuchar
+      p(id="contador") Te quedan 2 reproducciones
       form.form-horizontal
         div.form-group  
           label.col-sm-2.control-label Transcripción:
@@ -88,3 +96,5 @@ block content
           div.col-sm-6
               input.form-control(type='text',id="nac", name='f1_time')
       button.btn.btn-default(onclick='submit(' + oracionN +',' + nivelN + ')') Guardar!
+      #guardarAlert(class='hide')
+        p No escribiste nada en el campo de nacionalidad! No importa que te equivoques, escribí lo que te haya parecido.   

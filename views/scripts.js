@@ -5,12 +5,18 @@
       var provincia = document.getElementById('provincia').value;
       var genero = document.getElementById('genero').value;
 
-      checkIfCompleted();  
+      checkIfCompleted();
+
+      if(nac.equals("")){
+        var guardarAlert = document.getElementById('guardarAlert');
+        guardarAlert.className = "alert alert-danger"
+      }
+
       var xmlHttp = new XMLHttpRequest();
       xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + oracion + "&nivel=" + nivel, true );
       xmlHttp.send( null );
       document.cookie = "submisionCompleted=true";
-      document.body.innerHTML="Gracias por participar!";
+      document.body.innerHTML="Gracias por participar, esto es todo, si querés parcipar de más experimentos podés entrar en ";
   }
   function getCookie(cname) {
       var name = cname + "=";
@@ -26,21 +32,14 @@
       }
       return "";
   }
-  function missingArg(parent){
-      var para = document.createElement("p.red");
-      para.style = "color:red"
-      var node = document.createTextNode("Por favor complete este campo");
-      para.appendChild(node);
-      var element = document.getElementById(parent);
-      //add error
-      return;
-  }
 
 function checkIfCompleted(){
   var sub = getCookie("submisionCompleted");
   if (sub == "") {
+      var all = document.getElementById("all");
+      all.className = "";
   }else{
-    document.body.innerHTML="Ya habías completado la encuesta!";
+    document.body.innerHTML="Gracias por participar, esto es todo, si querés parcipar de más experimentos podés entrar en ";
   }
 }
 
@@ -50,16 +49,19 @@ function guardar(){
   var genero = document.getElementById('genero').value;
   var missing = false;
   if(edad == -1){
-      missingArg("pEdad");
       missing = true;
+      var edadAlert = document.getElementById('edadAlert');
+      edadAlert.className = "alert alert-danger"
   }
   if(genero == "-"){
-      missingArg("pGenero");
       missing = true;
+      var generoAlert = document.getElementById('generoAlert');
+      generoAlert.className = "alert alert-danger"
   }
   if(provincia == "-"){
-      missingArg("pProvincia");
       missing = true;
+      var provinciaAlert = document.getElementById('provinciaAlert');
+      provinciaAlert.className = "alert alert-danger"
   }
   if(missing)
       return;
@@ -71,20 +73,17 @@ function guardar(){
   instrucciones.className = "btn-group.bootstrap-select"
 
 }
-var vecesReproducido = 0;
+var reproduccionesRestantes = 2;
 var notified = false;
 function play(){
   var oAudio = document.getElementById('myaudio');
-  vecesReproducido++;
-  if (vecesReproducido == 1){
-    var playExp = document.getElementById("playExp");
-    playExp.className="btn btn-warning"
-  }
-  if (vecesReproducido == 2){
-    var playExp = document.getElementById("playExp");
-    playExp.disabled="disabled"
-  }
+  if(!oAudio.paused)
+    return;
+  reproduccionesRestantes--;
+  document.getElementById("contador").innerHTML = "Te quedan " + reproduccionesRestantes + " reproducciones";
   oAudio.play();
+  if(reproduccionesRestantes == 0)
+    document.getElementById('playExp').disabled="disabled"
 }
 
 function entendido(){
