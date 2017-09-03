@@ -7,9 +7,10 @@
 
       checkIfCompleted();
 
-      if(nac.equals("")){
+      if(nac == ""){
         var guardarAlert = document.getElementById('guardarAlert');
         guardarAlert.className = "alert alert-danger"
+        return
       }
 
       var xmlHttp = new XMLHttpRequest();
