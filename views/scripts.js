@@ -29,9 +29,7 @@
             document.cookie = "audiosCompleted=" + previousAudios + "," + oracion + ";";
             window.location += "?audiosCompleted=" + previousAudios + "," + oracion
         }
-        
-
-        setTimeout(function(){ location.reload(); }, 4000);
+        setTimeout(function(){ location.reload(); }, 7000);
       }
       else
         document.body.innerHTML="Gracias por participar, eso es todo, si querés parcipar de más experimentos podés entrar en...";
