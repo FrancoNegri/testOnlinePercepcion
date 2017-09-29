@@ -1,32 +1,48 @@
 var express = require('express');
 var router = express.Router();
 var audioBag = [];
-
+var levelBag = [];
 
 router.init123 = function() {
     console.log("Initializing bag...");
-    refillBag();
+    refillAudioBag();
+    refillLevelBag();
     return this;
 };
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  if (audioBag.length > 0){
+
+  var audiosCompleted = req.query.audiosCompleted
+  console.log(audiosCompleted);
+  if(typeof audiosCompleted === "undefined"){
+    if (audioBag.length === 0){
+      console.log("Refilling Audio bag...");
+      refillAudioBag();
+    }
     audio = audioBag.pop();
+    var nuevaOracion = audio[0];
+    var newLevel = audio[1];
   }else{
-    console.log("Refilling bag...");
-    refillBag();
-    audio = audioBag.pop();
+    if (levelBag.length === 0){
+      console.log("Refilling Level bag...");
+      refillLevelBag();
+    }
+    var audiosCompleted = audiosCompleted.split(',');
+    var nuevaOracion = parseInt(audiosCompleted[audiosCompleted.length-1]) + 1
+    if(nuevaOracion>oraciones){
+      nuevaOracion=1
+    }
+
+    var newLevel = levelBag.pop()
   }
-  var oracion = audio[0];
-  var nivel = audio[1];
-  console.log("Audio Asignado: " + oracion + "." + nivel);
-  res.render('index', { oracionN: oracion, nivelN: nivel});
+  console.log("Audio Asignado: " + nuevaOracion + "." + newLevel);
+  res.render('index', { oracionN: nuevaOracion, nivelN: newLevel});
 });
 
 var oraciones = 10;
 var niveles = 5;
-var refillBag = function(string){
+var refillAudioBag = function(string){
     //re feo
     for (var i = 1; i <= oraciones; i++) {
         for (var j = 0; j < niveles; j++) {
@@ -35,6 +51,14 @@ var refillBag = function(string){
     }
   shuffle(audioBag);
 }
+
+var refillLevelBag = function(string){
+    for (var j = 0; j < niveles; j++) {
+      levelBag.push(j);
+    }
+  shuffle(levelBag);
+}
+
 
 
 function shuffle(array) {

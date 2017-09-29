@@ -17,9 +17,20 @@
       xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + oracion + "&nivel=" + nivel, true );
       xmlHttp.send( null );
       timesCompleted++
-      document.cookie = "submisionCompleted=" + timesCompleted + ";";
+      document.cookie = "submisionCompleted=" + timesCompleted  + ";";
       if(timesCompleted < 5){
         document.body.innerHTML="Gracias por participar, en instantes se le proporcionará otro audio para escuchar, si desea salir, puede hacerlo ahora y continuar mas adelante...";
+        var previousAudios = getCookie("audiosCompleted")
+        if(previousAudios == ""){
+            document.cookie = "audiosCompleted=" + oracion + ";";
+            window.location += "?audiosCompleted=" + oracion;  
+        }
+        else{
+            document.cookie = "audiosCompleted=" + previousAudios + "," + oracion + ";";
+            window.location += "?audiosCompleted=" + previousAudios + "," + oracion
+        }
+        
+
         setTimeout(function(){ location.reload(); }, 4000);
       }
       else
