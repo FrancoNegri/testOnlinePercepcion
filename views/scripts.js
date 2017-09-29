@@ -1,11 +1,11 @@
   function submit(oracion, nivel){
-      var nac = document.getElementById('nac').value;
-      var trans = document.getElementById('trans').value;
-      var edad = document.getElementById('edad').value;
-      var provincia = document.getElementById('provincia').value;
-      var genero = document.getElementById('genero').value;
+      var nac = document.getElementById('nac').value
+      var trans = document.getElementById('trans').value
+      var edad = document.getElementById('edad').value
+      var provincia = document.getElementById('provincia').value
+      var genero = document.getElementById('genero').value
 
-      checkIfCompleted();
+      var timesCompleted = checkIfCompleted()
 
       if(nac == ""){
         var guardarAlert = document.getElementById('guardarAlert');
@@ -16,8 +16,14 @@
       var xmlHttp = new XMLHttpRequest();
       xmlHttp.open( "GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + oracion + "&nivel=" + nivel, true );
       xmlHttp.send( null );
-      document.cookie = "submisionCompleted=true";
-      document.body.innerHTML="Gracias por participar, esto es todo, si querés parcipar de más experimentos podés entrar en ";
+      timesCompleted++
+      document.cookie = "submisionCompleted=" + timesCompleted + ";";
+      if(timesCompleted < 5){
+        document.body.innerHTML="Gracias por participar, en instantes se le proporcionará otro audio para escuchar, si desea salir, puede hacerlo ahora y continuar mas adelante...";
+        setTimeout(function(){ location.reload(); }, 4000);
+      }
+      else
+        document.body.innerHTML="Gracias por participar, eso es todo, si querés parcipar de más experimentos podés entrar en...";
   }
   function getCookie(cname) {
       var name = cname + "=";
@@ -37,10 +43,19 @@
 function checkIfCompleted(){
   var sub = getCookie("submisionCompleted");
   if (sub == "") {
+    var all = document.getElementById("all");
+      all.className = "";
+      return 0
+    }
+
+  sub = parseInt(sub)
+  if (sub < 5) {
       var all = document.getElementById("all");
       all.className = "";
+      return sub
   }else{
-    document.body.innerHTML="Gracias por participar, esto es todo, si querés parcipar de más experimentos podés entrar en ";
+    document.body.innerHTML="Gracias por participar, eso es todo, si querés parcipar de más experimentos podés entrar en...";
+    return 5
   }
 }
 
