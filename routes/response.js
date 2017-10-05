@@ -36,7 +36,7 @@ router.get('/', function(req, res, next) {
         return;
     }
     console.log("Upcoming response from: ")
-    console.log(req.hostname)
+    console.log(req.ip)
     console.log(ip)
     console.log("oracion: ")
     console.log(oracion)
