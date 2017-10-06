@@ -1,3 +1,5 @@
+  var alreadySubmmited = false
+
   function submit(oracion, nivel) {
       //datos de la encuesta
       var nac = document.getElementById('nac').value
@@ -9,11 +11,14 @@
           guardarAlert.className = "alert alert-danger"
           return
       }
+      if (alreadySubmmited == true)
+          return
 
       var [edad, provincia, genero] = getPersonalData();
       var xmlHttp = new XMLHttpRequest();
       url = "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + oracion + "&nivel=" + nivel
       httpGetAsync(url, showFinalOfPoll)
+      alreadySubmmited = true
       timesComplet++
       document.cookie = "timesComplet=" + timesComplet + ";";
       if (timesComplet < 5) {
@@ -53,13 +58,13 @@
       var audios = getCookie("audiosCompleted")
       var url = "?audiosCompleted=" + audios
       console.log(url)
-      httpGetAsync(url, refresh)
-      //window.location.href = url
+      //httpGetAsync(url, refresh)
+      window.location.href = url
   }
 
   function refresh(response) {
-    document.body.innerHTML=response;
-    checkIfCompleted()
+      document.body.innerHTML = response;
+      location.reload();
   }
 
   function getPersonalData() {
