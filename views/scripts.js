@@ -1,4 +1,5 @@
   var alreadySubmmited = false
+  var maxTimesToComplete = 5
 
   function submit(oracion, nivel) {
       //datos de la encuesta
@@ -45,7 +46,7 @@
       var timesComplet = timesCompleted()
       var experimento = document.getElementById("experimento");
       experimento.className = "hide";
-      if (timesComplet < 4) {
+      if (timesComplet < maxTimesToComplete) {
           var otherTry = document.getElementById('otherTry');
           otherTry.className = ""
       } else {
@@ -96,7 +97,7 @@
   }
 
   function checkIfCompleted() {
-      if (timesCompleted() > 4) {
+      if (timesCompleted() > maxTimesToComplete) {
           document.body.innerHTML = "¡Muchas gracias por tu participación! Ya podés cerrar la ventana del navegador.";
       } else {
           var personalInfo = getCookie("personalInfo")
@@ -122,10 +123,10 @@
           return 0
       }
       sub = parseInt(sub)
-      if (sub < 5) {
+      if (sub < maxTimesToComplete) {
           return sub
       } else {
-          return 5
+          return maxTimesToComplete
       }
   }
 

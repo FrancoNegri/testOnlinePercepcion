@@ -23,7 +23,7 @@ router.get('/', function(req, res, next) {
     }
     if (req.query.genero && req.query.provincia && req.query.nac && req.query.trans) {
       try{
-        var ip = ipV4StringToInteger(req.ip);
+        var ip = req.ip;
       }catch(error){
         console.log("Error with upcoming response from: ")
         console.log(req.ip)

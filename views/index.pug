@@ -19,21 +19,23 @@ block content
           #s.btn-group.bootstrap-select
             select(id="edad", name='f1_time').btn.dropdown-toggle.btn-default
                 option(value=-1 ) -
-                -for (var i = 0; i <= 12; ++i) {
-                    option(value= i) #{i*5 +16 } - #{(i+1)*5+15}
-                - }
-                option(value=81) +80
+                option(value=18) 18-25
+                option(value=26) 26-35
+                option(value=36) 36-45
+                option(value=45) 46-55
+                option(value=56) 56-65
+                option(value=66) 66+
           #edadAlert(class='hide')
             p Es necesario completar este campo
         #generoDiv.form-group
-          label.col-sm-3.control-label Genero:
+          label.col-sm-3.control-label Género:
           #s.btn-group.bootstrap-select
             select(id="genero", name='f1_time').btn.dropdown-toggle.btn-default
                 option(value="-") -
-                option(value="F") Mujer
-                option(value="M") Hombre
+                option(value="F") Femenino
+                option(value="M") Masculino
                 option(value="O") Otro
-                option(value="NC") No Contesta
+                option(value="NC") No contesta
           #generoAlert(class='hide')
             p Es necesario completar este campo
         #provinciaDiv.form-group
@@ -55,7 +57,7 @@ block content
                 option(value="La Rioja") La Rioja
                 option(value="Mendoza") Mendoza
                 option(value="Misiones") Misiones
-                option(value="Neuquén") Neuquén
+                option(value="Neuquen") Neuquén
                 option(value="Río Negro") Río Negro
                 option(value="Salta") Salta
                 option(value="San Juan") San Juan
@@ -64,8 +66,8 @@ block content
                 option(value="Santa Fe") Santa Fe
                 option(value="Santiago del Estero") Santiago del Estero
                 option(value="Tierra del Fuego") Tierra del Fuego
-                option(value="Tucumán") Tucumán
-                option(value="No soy Argentino") Fuera de Argentina
+                option(value="Tucuman") Tucumán
+                option(value="Fuera de Argentina") Fuera de Argentina
         #provinciaAlert(class='hide')
           p Es necesario completar este campo    
       #buttonDiv
@@ -92,7 +94,7 @@ block content
           div.col-sm-6
               input.form-control(type='text',id="trans", name='f1_time').form-control
         div.form-group
-          label.col-sm-2.control-label Nacionalidad del hablante:
+          label.col-sm-2.control-label Origen/Nacionalidad del hablante:
           div.col-sm-6
               input.form-control(type='text',id="nac", name='f1_time')
       button.btn.btn-default(onclick='submit(' + oracionN +',' + nivelN + ')') Guardar!
