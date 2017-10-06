@@ -5,17 +5,17 @@ block content
     script
       include scripts.js
     body(onload="checkIfCompleted();")
-    h1 Test De Percepción
+    h1 Estudio de Percepción
     #infoGral
-      li Para realizar este test es requerimiento indispensable escuchar el siguiente audio con auriculares.
-      li Solo es posible realizar este test una vez.
-      li La duración del mismo es menor a 5 minutos.
+      p ¡Gracias por participar! 
+      p Con este estudio queremos evaluar la calidad de distintas voces artificiales. 
+      p Es fundamental que lo hagas con auriculares y en un ambiente silencioso.
     #datosPersonales.btn-group.bootstrap-select
-      h2 Datos Personales:
-      p Los datos aquí guardados solo se usarán para generar métricas, los datos no quedarán asociados.
+      h3 Datos Personales:
+      p Antes de empezar, por favor completá estos datos, que usaremos sólo para generar métricas de los participantes. Tu participación es totalmente anónima y confidencial.
       form.form-horizontal
         #edadDiv.form-group
-          label.col-sm-2.control-label(id="pEdad") Edad:
+          label.col-sm-3.control-label(id="pEdad") Edad:
           #s.btn-group.bootstrap-select
             select(id="edad", name='f1_time').btn.dropdown-toggle.btn-default
                 option(value=-1 ) -
@@ -26,7 +26,7 @@ block content
           #edadAlert(class='hide')
             p Es necesario completar este campo
         #generoDiv.form-group
-          label.col-sm-2.control-label Genero:
+          label.col-sm-3.control-label Genero:
           #s.btn-group.bootstrap-select
             select(id="genero", name='f1_time').btn.dropdown-toggle.btn-default
                 option(value="-") -
@@ -37,7 +37,7 @@ block content
           #generoAlert(class='hide')
             p Es necesario completar este campo
         #provinciaDiv.form-group
-          label.col-sm-4.control-label Región en la que pasaste la mayor parte de tu infancia:
+          label.col-sm-3.control-label Dónde pasaste la mayor parte de tus primeros 10 años de vida:
           div.btn-group.bootstrap-select
             select(id="provincia", name='f1_time').btn.dropdown-toggle.btn-default
                 option(value="-") -
@@ -65,26 +65,26 @@ block content
                 option(value="Santiago del Estero") Santiago del Estero
                 option(value="Tierra del Fuego") Tierra del Fuego
                 option(value="Tucumán") Tucumán
-                option(value="No soy Argentino") No soy Argentino
+                option(value="No soy Argentino") Fuera de Argentina
         #provinciaAlert(class='hide')
           p Es necesario completar este campo    
       #buttonDiv
         button.btn.btn-default(onclick='guardar()') Guardar
     #instrucciones.hide
-      h2 Instrucciones
+      h3 Instrucciones
       ul
-        li Se le presentará un audio de alguien hablando, el audio dura aproximadamente 3 segundos.
-        li Se le pedirá que transcriba el audio y que indique la nacionalidad del hablante.
-        li Podrá escuar el audio solamente dos veces.
-        li Recuerde utilizar auriculares!
-        li Si solo logró entender palabras sueltas, no importa! Anotelas en el orden que crea correcto.
-      button.btn.btn-default(onclick='entendido()') Entendido!
+        li Se te presentará un breve audio con alguien hablando, que dura aproximadamente 3 segundos.
+        li ¡Recordá utilizar auriculares!
+        li Tu tarea es transcribir las palabras del audio, e indicar el origen/nacionalidad del hablante.
+        li Esta tarea puede resultar difícil. Hacela lo mejor que puedas. Si solo lográs entender palabras sueltas, transcribilas en el orden en que las escuchás.
+        li Podés escuchar el audio solamente dos veces.
+      #button2Div
+        button.btn.btn-default(onclick='entendido()') Entendido!
     #experimento.hide
-      h2 Experimento:
       //Archivo de audio
       audio(id="myaudio")
           source(src='wavs/' + nivelN + '/' + oracionN + '.wav', type='audio/mpeg')
-      button.btn.btn-success(id="playExp",onclick='play()') Escuchar
+      button.btn.btn-success(id="playExp",onclick='play()') Reproducir el audio
       p(id="contador") Te quedan 2 reproducciones
       form.form-horizontal
         div.form-group  
@@ -97,4 +97,9 @@ block content
               input.form-control(type='text',id="nac", name='f1_time')
       button.btn.btn-default(onclick='submit(' + oracionN +',' + nivelN + ')') Guardar!
       #guardarAlert(class='hide')
-        p No escribiste nada en el campo de nacionalidad! No importa que te equivoques, escribí lo que te haya parecido.   
+        p No escribiste nada en el campo de nacionalidad! No importa que te equivoques, escribí lo que te haya parecido.
+    #otherTry(class='hide')
+      p ¡Muchas gracias! Si querés hacer otro audio, hacé click en Continuar. Si no, ya podés cerrar la ventana del navegador.
+      button.btn.btn-default(onclick='continuar()') Continuar!
+    #noMoreTries(class='hide')
+      p ¡Muchas gracias por tu participación! Ya podés cerrar la ventana del navegador.

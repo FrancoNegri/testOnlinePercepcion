@@ -2,7 +2,6 @@
       //datos de la encuesta
       var nac = document.getElementById('nac').value
       var trans = document.getElementById('trans').value
-          //datos personales
       var timesComplet = timesCompleted()
 
       if (nac == "") {
@@ -13,28 +12,53 @@
 
       var [edad, provincia, genero] = getPersonalData();
       var xmlHttp = new XMLHttpRequest();
-      xmlHttp.open("GET", "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + oracion + "&nivel=" + nivel, true);
-      xmlHttp.send(null);
+      url = "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + oracion + "&nivel=" + nivel
+      httpGetAsync(url, showFinalOfPoll)
       timesComplet++
       document.cookie = "timesComplet=" + timesComplet + ";";
       if (timesComplet < 5) {
-          document.body.innerHTML = "Gracias por participar, en instantes se le proporcionará otro audio para escuchar, si desea salir, puede hacerlo ahora y continuar mas adelante...";
           var previousAudios = getCookie("audiosCompleted")
           if (previousAudios == "") {
               document.cookie = "audiosCompleted=" + oracion + ";";
-              window.location += "?audiosCompleted=" + oracion;
           } else {
               document.cookie = "audiosCompleted=" + previousAudios + "," + oracion + ";";
-              window.location += "," + oracion;
-          }    
-      setTimeout(reloadPage, 8000)
-      } else {
-          document.body.innerHTML = "Gracias por participar, eso es todo, si querés parcipar de más experimentos podés entrar en...";
+          }
       }
   }
 
-  function reloadPage() {
-      location.reload()
+  function httpGetAsync(theUrl, callback) {
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function() {
+          if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+              callback(xmlHttp.responseText);
+      }
+      xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+      xmlHttp.send(null);
+  }
+
+  function showFinalOfPoll(response) {
+      var timesComplet = timesCompleted()
+      var experimento = document.getElementById("experimento");
+      experimento.className = "hide";
+      if (timesComplet < 4) {
+          var otherTry = document.getElementById('otherTry');
+          otherTry.className = ""
+      } else {
+          var noMoreTries = document.getElementById('noMoreTries');
+          noMoreTries.className = ""
+      }
+  }
+
+  function continuar() {
+      var audios = getCookie("audiosCompleted")
+      var url = "?audiosCompleted=" + audios
+      console.log(url)
+      window.location.href = url
+      //httpGetAsync(url,refresh)
+  }
+
+  function refresh(response) {
+    window.location.href = response;
   }
 
   function getPersonalData() {
@@ -67,13 +91,14 @@
 
   function checkIfCompleted() {
       if (timesCompleted() > 4) {
-          document.body.innerHTML = "Gracias por participar, eso es todo, si querés parcipar de más experimentos podés entrar en...";
+          document.body.innerHTML = "¡Muchas gracias por tu participación! Ya podés cerrar la ventana del navegador.";
       } else {
           var personalInfo = getCookie("personalInfo")
           if (personalInfo === "") {
               showPoll();
           } else {
               showInstructions();
+              entendido();
               showPoll();
           }
       }
@@ -151,7 +176,7 @@
   }
 
   function entendido() {
-      var instrucciones = document.getElementById("instrucciones");
+      var instrucciones = document.getElementById("button2Div");
       instrucciones.className = "hide"
       var experimento = document.getElementById("experimento");
       experimento.className = "form-group";
