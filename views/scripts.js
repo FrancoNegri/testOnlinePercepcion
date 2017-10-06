@@ -53,12 +53,13 @@
       var audios = getCookie("audiosCompleted")
       var url = "?audiosCompleted=" + audios
       console.log(url)
-      window.location.href = url
-      //httpGetAsync(url,refresh)
+      httpGetAsync(url, refresh)
+      //window.location.href = url
   }
 
   function refresh(response) {
-    window.location.href = response;
+    document.body.innerHTML=response;
+    checkIfCompleted()
   }
 
   function getPersonalData() {
