@@ -11,24 +11,24 @@ var stmt = db.prepare('INSERT INTO results VALUES (?,?,?,?,?,?,?,?)')
 router.get('/', function(req, res, next) {
 
     var error = false;
-    if (req.query.oracion && req.query.nivel && req.query.edad) {
+    if (req.query.oracion && req.query.nivel) {
         var oracion = parseInt(unescape(req.query.oracion));
         var nivel = parseInt(unescape(req.query.nivel));
-        var edad = parseInt(unescape(req.query.edad));
-        if (isNaN(oracion) || isNaN(nivel) || isNaN(edad)) {
+        if (isNaN(oracion) || isNaN(nivel)) {
             error = true;
         }
     } else {
         error = true;
     }
-    if (req.query.genero && req.query.provincia && req.query.nac && req.query.trans) {
-      try{
-        var ip = req.ip;
-      }catch(error){
-        console.log("Error with upcoming response from: ")
-        console.log(req.ip)
-        console.log(error)
-      }
+    if (req.query.genero && req.query.provincia && req.query.nac && req.query.trans && req.query.edad) {
+        try {
+            var ip = req.ip;
+        } catch (error) {
+            console.log("Error with upcoming response from: ")
+            console.log(req.ip)
+            console.log(error)
+        }
+        var edad = unescape(req.query.edad);
         var genero = unescape(req.query.genero);
         var provincia = unescape(req.query.provincia);
         var nac = unescape(req.query.nac);
@@ -44,23 +44,16 @@ router.get('/', function(req, res, next) {
     console.log("Upcoming response from: ")
     console.log(req.ip)
     console.log(ip)
-    console.log("oracion: ")
-    console.log(oracion)
-    console.log("nivel: ")
-    console.log(nivel)
-    console.log("genero: ")
-    console.log(genero)
-    console.log("edad: ")
-    console.log(edad)
-    console.log("provincia: ")
-    console.log(provincia)
-    console.log("LANG: ")
-    console.log(nac)
-    console.log("transcription: ")
-    console.log(trans)
+    console.log("infoPersonal: ")
+    console.log("\tOracion: " + oracion)
+    console.log("\tNivel: " + nivel)
+    console.log("\tGenero: " + genero)
+    console.log("\tRango Edad: " + edad)
+    console.log("\tProvincia: " + provincia)
+    console.log("Rtas ")
+    console.log("\tLang: " + nac)
+    console.log("\ttranscription: " + trans)
 
-    //CREATE TABLE results(IP INT PRIMARY KEY,ORACION INT, NIVEL INT,EDAD INT,GENERO TEXT,PROVINCIA TEXT,LANG TEXT, TRANSC TEXT);
-    //IP como int? ver mejor esto...
     // que pasa si alguien pone "====" en un formulario
     stmt.run(ip, oracion, nivel, edad, genero, provincia, nac, trans);
     res.send('ok');

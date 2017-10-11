@@ -15,7 +15,7 @@ router.get('/', function(req, res, next) {
 
   var audiosCompleted = req.query.audiosCompleted
   console.log(audiosCompleted);
-  if(typeof audiosCompleted === "undefined"){
+  if(typeof audiosCompleted === "undefined" || audiosCompleted === ""){
     if (audioBag.length === 0){
       console.log("Refilling Audio bag...");
       refillAudioBag();
