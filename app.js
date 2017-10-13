@@ -4,13 +4,17 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+//var catalog = require('./routes/catalog'); //Import routes for "catalog" area of site
+var compression = require('compression');
 var index = require('./routes/index').init123();
 var response = require('./routes/response');
 var helmet = require('helmet');
 var app = express();
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.use(compression()); //Compress all routes
+
+app.use(express.static(path.join(__dirname, 'public')));
+//app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 // uncomment after placing your favicon in /public
@@ -37,7 +41,7 @@ app.use(function(req, res, next) {
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+  res.locals.error = req.app.get('env') === 'production' ? err : {};
 
   // render the error page
   res.status(err.status || 500);
