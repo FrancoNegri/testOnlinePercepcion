@@ -18,11 +18,10 @@
       var [edad, provincia, genero] = getPersonalData();
       var xmlHttp = new XMLHttpRequest();
       url = "response?nac=" + nac + "&trans=" + trans + "&genero=" + genero + "&provincia=" + provincia + "&edad=" + edad + "&oracion=" + oracion + "&nivel=" + nivel
-      httpGetAsync(url, showFinalOfPoll)
       alreadySubmmited = true
       timesComplet++
       document.cookie = "timesComplet=" + timesComplet + ";";
-      if (timesComplet < 5) {
+      if (timesComplet < maxTimesToComplete) {
           var previousAudios = getCookie("audiosCompleted")
           if (previousAudios == "") {
               document.cookie = "audiosCompleted=" + oracion + ";";
@@ -30,6 +29,7 @@
               document.cookie = "audiosCompleted=" + previousAudios + "," + oracion + ";";
           }
       }
+      httpGetAsync(url, showFinalOfPoll)
   }
 
   function httpGetAsync(theUrl, callback) {
@@ -59,7 +59,7 @@
       var audios = getCookie("audiosCompleted")
       var url = "?audiosCompleted=" + audios
       console.log(url)
-      //httpGetAsync(url, refresh)
+          //httpGetAsync(url, refresh)
       window.location.href = url
   }
 
@@ -97,9 +97,7 @@
   }
 
   function checkIfCompleted() {
-      if (timesCompleted() > maxTimesToComplete) {
-          document.body.innerHTML = "¡Muchas gracias por tu participación! Ya podés cerrar la ventana del navegador.";
-      } else {
+      if (timesCompleted() < maxTimesToComplete) {
           var personalInfo = getCookie("personalInfo")
           if (personalInfo === "") {
               showPoll();
@@ -108,6 +106,8 @@
               entendido();
               showPoll();
           }
+      } else {
+          document.body.innerHTML = "¡Muchas gracias por tu participación! Ya podés cerrar la ventana del navegador.";
       }
   }
 
@@ -123,11 +123,7 @@
           return 0
       }
       sub = parseInt(sub)
-      if (sub < maxTimesToComplete) {
-          return sub
-      } else {
-          return maxTimesToComplete
-      }
+      return sub
   }
 
   function guardar() {

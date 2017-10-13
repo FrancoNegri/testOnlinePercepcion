@@ -6,7 +6,7 @@ var app = express();
 var sqlite3 = require('sqlite3').verbose()
 var db = new sqlite3.Database('database.db')
 
-var stmt = db.prepare('INSERT INTO results VALUES (?,?,?,?,?,?,?,?)')
+var stmt = db.prepare('INSERT INTO results VALUES (?,?,?,?,?,?,?,?,DATETIME("now"))')
 
 router.get('/', function(req, res, next) {
 
@@ -53,8 +53,8 @@ router.get('/', function(req, res, next) {
     console.log("Rtas ")
     console.log("\tLang: " + nac)
     console.log("\ttranscription: " + trans)
-
     // que pasa si alguien pone "====" en un formulario
+    console.log(Date.now());
     stmt.run(ip, oracion, nivel, edad, genero, provincia, nac, trans);
     res.send('ok');
 });
