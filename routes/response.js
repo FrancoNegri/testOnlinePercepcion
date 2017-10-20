@@ -20,7 +20,7 @@ router.get('/', function(req, res, next) {
     } else {
         error = true;
     }
-    if (req.query.genero && req.query.provincia && req.query.nac && req.query.trans && req.query.edad) {
+    if (req.query.genero && req.query.provincia && req.query.nac && req.query.edad) {
         try {
             var ip = req.ip;
         } catch (error) {
