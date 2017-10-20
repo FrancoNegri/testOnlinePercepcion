@@ -1,0 +1,1639 @@
+Initializing bag...
+Listening on port 8888
+undefined
+Audio Asignado: 1.0
+[0mGET / [32m200 [0m430.485 ms - -[0m
+Upcoming response from: 
+::ffff:186.136.126.115
+::ffff:186.136.126.115
+infoPersonal: 
+	Oracion: 1
+	Nivel: 0
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Entre Ríos
+Rtas 
+	Lang: test
+	transcription: test
+1508370356956
+[0mGET /response?nac=test&trans=test&genero=F&provincia=Entre%20R%C3%ADos&edad=18%2025&oracion=1&nivel=0 [32m200 [0m6.660 ms - 2[0m
+1
+Audio Asignado: 2.1
+[0mGET /?audiosCompleted=1 [32m200 [0m237.076 ms - -[0m
+undefined
+Audio Asignado: 10.0
+[0mGET / [32m200 [0m223.405 ms - -[0m
+undefined
+Audio Asignado: 1.3
+[0mGET / [32m200 [0m165.749 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m13.729 ms - 254[0m
+undefined
+Audio Asignado: 8.1
+[0mGET / [32m200 [0m139.864 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m17.444 ms - 254[0m
+undefined
+Audio Asignado: 9.1
+[0mGET / [32m200 [0m127.703 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m13.962 ms - 254[0m
+undefined
+Audio Asignado: 10.4
+[0mGET / [32m200 [0m130.577 ms - -[0m
+Upcoming response from: 
+::ffff:181.231.196.63
+::ffff:181.231.196.63
+infoPersonal: 
+	Oracion: 10
+	Nivel: 4
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: estadounidense
+	transcription: El chico argentino perdió su vaso
+1508371971671
+[0mGET /response?nac=estadounidense&trans=El%20chico%20argentino%20perdi%C3%B3%20su%20vaso&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=10&nivel=4 [32m200 [0m4.519 ms - 2[0m
+10
+Audio Asignado: 1.5
+[0mGET /?audiosCompleted=10 [32m200 [0m113.264 ms - -[0m
+10
+Audio Asignado: 1.3
+[0mGET /?audiosCompleted=10 [32m200 [0m121.819 ms - -[0m
+Upcoming response from: 
+::ffff:181.231.196.63
+::ffff:181.231.196.63
+infoPersonal: 
+	Oracion: 1
+	Nivel: 3
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: estadounidense
+	transcription: Mi montaña aguileña recorrió la esquina
+1508372064424
+[0mGET /response?nac=estadounidense&trans=Mi%20monta%C3%B1a%20aguile%C3%B1a%20recorri%C3%B3%20la%20esquina&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=1&nivel=3 [32m200 [0m4.243 ms - 2[0m
+10,1
+Audio Asignado: 2.4
+[0mGET /?audiosCompleted=10,1 [32m200 [0m122.416 ms - -[0m
+10,1
+Audio Asignado: 2.0
+[0mGET /?audiosCompleted=10,1 [32m200 [0m125.803 ms - -[0m
+Upcoming response from: 
+::ffff:181.231.196.63
+::ffff:181.231.196.63
+infoPersonal: 
+	Oracion: 2
+	Nivel: 0
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: argentino
+	transcription: Aquel fuerte vidrio prefirió aquel botón
+1508372117480
+[0mGET /response?nac=argentino&trans=Aquel%20fuerte%20vidrio%20prefiri%C3%B3%20aquel%20bot%C3%B3n&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=2&nivel=0 [32m200 [0m4.417 ms - 2[0m
+10,1,2
+Audio Asignado: 3.2
+[0mGET /?audiosCompleted=10,1,2 [32m200 [0m120.231 ms - -[0m
+undefined
+Audio Asignado: 10.1
+[0mGET / [32m200 [0m114.937 ms - -[0m
+undefined
+Audio Asignado: 5.4
+[0mGET / [32m200 [0m113.432 ms - -[0m
+Upcoming response from: 
+::ffff:181.231.196.63
+::ffff:181.231.196.63
+infoPersonal: 
+	Oracion: 5
+	Nivel: 4
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: polaco
+	transcription: nuestro reconstruye este chupetìn
+1508373069332
+[0mGET /response?nac=polaco&trans=nuestro%20reconstruye%20este%20chupet%C3%ACn&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=5&nivel=4 [32m200 [0m4.484 ms - 2[0m
+10,1,2,5
+Refilling Level bag...
+Audio Asignado: 6.2
+[0mGET /?audiosCompleted=10,1,2,5 [32m200 [0m115.724 ms - -[0m
+Upcoming response from: 
+::ffff:181.231.196.63
+::ffff:181.231.196.63
+infoPersonal: 
+	Oracion: 6
+	Nivel: 2
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: polaco
+	transcription: si profundo donde apoyo a julio
+1508373153829
+[0mGET /response?nac=polaco&trans=si%20profundo%20donde%20apoyo%20a%20julio&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=6&nivel=2 [32m200 [0m4.769 ms - 2[0m
+undefined
+Audio Asignado: 3.3
+[0mGET / [32m200 [0m115.386 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m13.885 ms - 254[0m
+undefined
+Audio Asignado: 9.2
+[0mGET / [32m200 [0m110.459 ms - -[0m
+undefined
+Audio Asignado: 7.3
+[0mGET / [32m200 [0m129.484 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m12.009 ms - 254[0m
+undefined
+Audio Asignado: 2.1
+[0mGET / [32m200 [0m104.997 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m10.030 ms - 254[0m
+invalid data!
+[0mGET /response?nac=China%20o%20japonesa&trans=&genero=F&provincia=Tierra%20del%20Fuego&edad=18%2025&oracion=7&nivel=3 [32m200 [0m1.149 ms - 7[0m
+7
+Audio Asignado: 8.1
+[0mGET /?audiosCompleted=7 [32m200 [0m96.587 ms - -[0m
+Upcoming response from: 
+201.213.123.191
+201.213.123.191
+infoPersonal: 
+	Oracion: 8
+	Nivel: 1
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Tierra del Fuego
+Rtas 
+	Lang: Español
+	transcription: Las acontojadas culturas Sonrieron en semicirculo
+1508374562048
+[0mGET /response?nac=Espa%C3%B1ol&trans=Las%20acontojadas%20culturas%20Sonrieron%20en%20semicirculo&genero=F&provincia=Tierra%20del%20Fuego&edad=18%2025&oracion=8&nivel=1 [32m200 [0m5.099 ms - 2[0m
+7,8
+Audio Asignado: 9.4
+[0mGET /?audiosCompleted=7,8 [32m200 [0m107.759 ms - -[0m
+undefined
+Audio Asignado: 4.5
+[0mGET / [32m200 [0m103.393 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m11.619 ms - 254[0m
+undefined
+Audio Asignado: 7.2
+[0mGET / [32m200 [0m99.275 ms - -[0m
+Upcoming response from: 
+201.213.123.191
+201.213.123.191
+infoPersonal: 
+	Oracion: 9
+	Nivel: 4
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Tierra del Fuego
+Rtas 
+	Lang: Ingles
+	transcription: Its a pair of promises 
+1508374599777
+[0mGET /response?nac=Ingles&trans=Its%20a%20pair%20of%20promises%20&genero=F&provincia=Tierra%20del%20Fuego&edad=18%2025&oracion=9&nivel=4 [32m200 [0m4.385 ms - 2[0m
+7,8,9
+Audio Asignado: 10.5
+[0mGET /?audiosCompleted=7,8,9 [32m200 [0m99.452 ms - -[0m
+invalid data!
+[0mGET /response?nac=Aleman&trans=&genero=F&provincia=Tierra%20del%20Fuego&edad=18%2025&oracion=10&nivel=5 [32m200 [0m1.177 ms - 7[0m
+undefined
+Audio Asignado: 8.2
+[0mGET / [32m200 [0m102.927 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m11.417 ms - 254[0m
+Upcoming response from: 
+186.143.134.228
+186.143.134.228
+infoPersonal: 
+	Oracion: 7
+	Nivel: 2
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Capital Federal
+Rtas 
+	Lang: Español
+	transcription: Enfrio churrascos anchos de Polonia
+1508374733126
+[0mGET /response?nac=Espa%C3%B1ol&trans=Enfrio%20churrascos%20anchos%20de%20Polonia&genero=F&provincia=Capital%20Federal&edad=18%2025&oracion=7&nivel=2 [32m200 [0m4.370 ms - 2[0m
+7
+Audio Asignado: 8.3
+[0mGET /?audiosCompleted=7 [32m200 [0m222.606 ms - -[0m
+Upcoming response from: 
+186.143.134.228
+186.143.134.228
+infoPersonal: 
+	Oracion: 8
+	Nivel: 3
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Capital Federal
+Rtas 
+	Lang: Español
+	transcription: De mi circulo
+1508374791225
+[0mGET /response?nac=Espa%C3%B1ol&trans=De%20mi%20circulo&genero=F&provincia=Capital%20Federal&edad=18%2025&oracion=8&nivel=3 [32m200 [0m4.837 ms - 2[0m
+7,8
+Audio Asignado: 9.0
+[0mGET /?audiosCompleted=7,8 [32m200 [0m206.147 ms - -[0m
+Upcoming response from: 
+::ffff:120.21.164.76
+::ffff:120.21.164.76
+infoPersonal: 
+	Oracion: 8
+	Nivel: 2
+	Genero: M
+	Rango Edad: 26 35
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Ingles/estadounidense
+	transcription: Las acongojadas cotorras sonrieron a mi circulo
+1508374802789
+[0mGET /response?nac=Ingles/estadounidense&trans=Las%20acongojadas%20cotorras%20sonrieron%20a%20mi%20circulo&genero=M&provincia=Buenos%20Aires&edad=26%2035&oracion=8&nivel=2 [32m200 [0m4.310 ms - 2[0m
+8
+Refilling Level bag...
+Audio Asignado: 9.4
+[0mGET /?audiosCompleted=8 [32m200 [0m199.340 ms - -[0m
+Upcoming response from: 
+186.143.134.228
+186.143.134.228
+infoPersonal: 
+	Oracion: 9
+	Nivel: 0
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Capital Federal
+Rtas 
+	Lang: Español
+	transcription: Ese gruñon perro prometio a esos cuñados
+1508374829541
+[0mGET /response?nac=Espa%C3%B1ol&trans=Ese%20gru%C3%B1on%20perro%20prometio%20a%20esos%20cu%C3%B1ados&genero=F&provincia=Capital%20Federal&edad=18%2025&oracion=9&nivel=0 [32m200 [0m4.397 ms - 2[0m
+7,8,9
+Audio Asignado: 10.2
+[0mGET /?audiosCompleted=7,8,9 [32m200 [0m156.375 ms - -[0m
+Upcoming response from: 
+186.143.134.228
+186.143.134.228
+infoPersonal: 
+	Oracion: 10
+	Nivel: 2
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Capital Federal
+Rtas 
+	Lang: Español
+	transcription: El nudillo argentino perdió su vaso
+1508374869717
+[0mGET /response?nac=Espa%C3%B1ol&trans=El%20nudillo%20argentino%20perdi%C3%B3%20su%20vaso&genero=F&provincia=Capital%20Federal&edad=18%2025&oracion=10&nivel=2 [32m200 [0m4.915 ms - 2[0m
+7,8,9,10
+Audio Asignado: 1.1
+[0mGET /?audiosCompleted=7,8,9,10 [32m200 [0m133.113 ms - -[0m
+Upcoming response from: 
+186.143.134.228
+186.143.134.228
+infoPersonal: 
+	Oracion: 1
+	Nivel: 1
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Capital Federal
+Rtas 
+	Lang: Español
+	transcription: Mi montaña aguileña recorrió la esquina
+1508374904523
+[0mGET /response?nac=Espa%C3%B1ol&trans=Mi%20monta%C3%B1a%20aguile%C3%B1a%20recorri%C3%B3%20la%20esquina&genero=F&provincia=Capital%20Federal&edad=18%2025&oracion=1&nivel=1 [32m200 [0m5.249 ms - 2[0m
+undefined
+Audio Asignado: 9.4
+[0mGET / [32m200 [0m125.256 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m14.699 ms - 254[0m
+undefined
+Audio Asignado: 9.3
+[0mGET / [32m200 [0m129.744 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m18.132 ms - 254[0m
+Upcoming response from: 
+::ffff:138.118.49.41
+::ffff:138.118.49.41
+infoPersonal: 
+	Oracion: 9
+	Nivel: 4
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Estadounidense
+	transcription: Ese gruñón pero prometió a esos cuñados
+1508375629319
+[0mGET /response?nac=Estadounidense&trans=Ese%20gru%C3%B1%C3%B3n%20pero%20prometi%C3%B3%20a%20esos%20cu%C3%B1ados&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=9&nivel=4 [32m200 [0m4.620 ms - 2[0m
+9
+Audio Asignado: 10.3
+[0mGET /?audiosCompleted=9 [32m200 [0m112.228 ms - -[0m
+Upcoming response from: 
+::ffff:138.118.49.41
+::ffff:138.118.49.41
+infoPersonal: 
+	Oracion: 9
+	Nivel: 4
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Estadounidense
+	transcription: Ese gruñón pero prometió a esos cuñados
+1508375761650
+[0mGET /response?nac=Estadounidense&trans=Ese%20gru%C3%B1%C3%B3n%20pero%20prometi%C3%B3%20a%20esos%20cu%C3%B1ados&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=9&nivel=4 [36m304 [0m4.606 ms - -[0m
+undefined
+Audio Asignado: 4.4
+[0mGET / [32m200 [0m117.233 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m20.835 ms - 254[0m
+undefined
+Audio Asignado: 5.2
+[0mGET / [32m200 [0m104.097 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m13.560 ms - 254[0m
+undefined
+Audio Asignado: 7.1
+[0mGET / [32m200 [0m119.551 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m10.279 ms - 254[0m
+undefined
+Audio Asignado: 3.5
+[0mGET / [32m200 [0m129.503 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m12.987 ms - 254[0m
+invalid data!
+[0mGET /response?nac=Chino%20&trans=&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=3&nivel=5 [32m200 [0m1.172 ms - 7[0m
+3
+Audio Asignado: 4.5
+[0mGET /?audiosCompleted=3 [32m200 [0m97.985 ms - -[0m
+invalid data!
+[0mGET /response?nac=Chino%20&trans=&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=4&nivel=5 [32m200 [0m1.200 ms - 7[0m
+3,4
+Audio Asignado: 5.0
+[0mGET /?audiosCompleted=3,4 [32m200 [0m105.767 ms - -[0m
+Upcoming response from: 
+::ffff:181.171.227.109
+::ffff:181.171.227.109
+infoPersonal: 
+	Oracion: 5
+	Nivel: 0
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Castellano 
+	transcription: Nuestro nublado tigre concluyo a este chupetin
+1508377983430
+[0mGET /response?nac=Castellano%20&trans=Nuestro%20nublado%20tigre%20concluyo%20a%20este%20chupetin&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=5&nivel=0 [32m200 [0m37.476 ms - 2[0m
+3,4,5
+Refilling Level bag...
+Audio Asignado: 6.2
+[0mGET /?audiosCompleted=3,4,5 [32m200 [0m120.550 ms - -[0m
+Upcoming response from: 
+::ffff:181.171.227.109
+::ffff:181.171.227.109
+infoPersonal: 
+	Oracion: 6
+	Nivel: 2
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Castellano
+	transcription: Su profundo riñon apoyo a julio
+1508378021446
+[0mGET /response?nac=Castellano&trans=Su%20profundo%20ri%C3%B1on%20apoyo%20a%20julio&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=6&nivel=2 [32m200 [0m5.025 ms - 2[0m
+3,4,5,6
+Audio Asignado: 7.3
+[0mGET /?audiosCompleted=3,4,5,6 [32m200 [0m98.888 ms - -[0m
+Upcoming response from: 
+::ffff:181.171.227.109
+::ffff:181.171.227.109
+infoPersonal: 
+	Oracion: 7
+	Nivel: 3
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Castellano
+	transcription: Frio churrasco lleno de colonia
+1508378059877
+[0mGET /response?nac=Castellano&trans=Frio%20churrasco%20lleno%20de%20colonia&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=7&nivel=3 [32m200 [0m3.866 ms - 2[0m
+undefined
+Audio Asignado: 6.5
+[0mGET / [32m200 [0m105.061 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m11.388 ms - 254[0m
+undefined
+Audio Asignado: 4.0
+[0mGET / [32m200 [0m99.793 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m11.031 ms - 254[0m
+undefined
+Audio Asignado: 10.3
+[0mGET / [32m200 [0m110.799 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m11.195 ms - 254[0m
+Upcoming response from: 
+::ffff:152.168.190.60
+::ffff:152.168.190.60
+infoPersonal: 
+	Oracion: 10
+	Nivel: 3
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Estados unidos
+	transcription: El Argentino perdio su vaso
+1508379496740
+[0mGET /response?nac=Estados%20unidos&trans=El%20Argentino%20perdio%20su%20vaso&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=10&nivel=3 [32m200 [0m5.080 ms - 2[0m
+10
+Audio Asignado: 1.1
+[0mGET /?audiosCompleted=10 [32m200 [0m108.321 ms - -[0m
+undefined
+Audio Asignado: 3.1
+[0mGET / [32m200 [0m103.067 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m15.320 ms - 254[0m
+Upcoming response from: 
+::ffff:200.127.95.107
+::ffff:200.127.95.107
+infoPersonal: 
+	Oracion: 3
+	Nivel: 1
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: La Rioja, Argentina
+	transcription: Este encollado encontrará nuestro corchete
+1508381445173
+[0mGET /response?nac=La%20Rioja,%20Argentina&trans=Este%20encollado%20encontrar%C3%A1%20nuestro%20corchete&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=3&nivel=1 [32m200 [0m5.135 ms - 2[0m
+3
+Audio Asignado: 4.4
+[0mGET /?audiosCompleted=3 [32m200 [0m120.966 ms - -[0m
+undefined
+Audio Asignado: 3.4
+[0mGET / [32m200 [0m111.553 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m9.535 ms - 254[0m
+undefined
+Audio Asignado: 7.5
+[0mGET / [32m200 [0m112.367 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m10.030 ms - 254[0m
+[0mGET /favicon.ico [33m404 [0m12.234 ms - 254[0m
+undefined
+Audio Asignado: 8.5
+[0mGET / [32m200 [0m100.403 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m11.134 ms - 254[0m
+Upcoming response from: 
+::ffff:181.13.80.107
+::ffff:181.13.80.107
+infoPersonal: 
+	Oracion: 8
+	Nivel: 5
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Estados unidos
+	transcription: Círculo
+1508438774375
+[0mGET /response?nac=Estados%20unidos&trans=C%C3%ADrculo&genero=M&provincia=Buenos%20Aires&edad=18%2025&oracion=8&nivel=5 [32m200 [0m5.139 ms - 2[0m
+8
+Audio Asignado: 9.0
+[0mGET /?audiosCompleted=8 [32m200 [0m240.623 ms - -[0m
+Upcoming response from: 
+::ffff:181.13.80.107
+::ffff:181.13.80.107
+infoPersonal: 
+	Oracion: 9
+	Nivel: 0
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Argentina
+	transcription: Ese gruñón Prometió a sus cuñados
+1508438839401
+[0mGET /response?nac=Argentina&trans=Ese%20gru%C3%B1%C3%B3n%20Prometi%C3%B3%20a%20sus%20cu%C3%B1ados&genero=M&provincia=Buenos%20Aires&edad=18%2025&oracion=9&nivel=0 [32m200 [0m5.040 ms - 2[0m
+undefined
+Audio Asignado: 1.1
+[0mGET / [32m200 [0m198.455 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m51.986 ms - 254[0m
+undefined
+Audio Asignado: 2.3
+[0mGET / [32m200 [0m156.734 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m11.112 ms - 254[0m
+undefined
+Audio Asignado: 8.4
+[0mGET / [32m200 [0m129.217 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m14.526 ms - 254[0m
+Upcoming response from: 
+::ffff:186.124.164.59
+::ffff:186.124.164.59
+infoPersonal: 
+	Oracion: 2
+	Nivel: 3
+	Genero: M
+	Rango Edad: 26 35
+	Provincia: Capital Federal
+Rtas 
+	Lang: paraguay
+	transcription: te voy a pegar un palazo en la nuca y romperte el orto
+1508454177278
+[0mGET /response?nac=paraguay&trans=te%20voy%20a%20pegar%20un%20palazo%20en%20la%20nuca%20y%20romperte%20el%20orto&genero=M&provincia=Capital%20Federal&edad=26%2035&oracion=2&nivel=3 [32m200 [0m5.454 ms - 2[0m
+2
+Audio Asignado: 3.5
+[0mGET /?audiosCompleted=2 [32m200 [0m140.973 ms - -[0m
+undefined
+Audio Asignado: 1.4
+[0mGET / [32m200 [0m121.874 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m11.713 ms - 254[0m
+Upcoming response from: 
+::ffff:152.170.236.36
+::ffff:152.170.236.36
+infoPersonal: 
+	Oracion: 8
+	Nivel: 4
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: estadounidense
+	transcription: círculo
+1508454520939
+[0mGET /response?nac=estadounidense&trans=c%C3%ADrculo&genero=M&provincia=Buenos%20Aires&edad=18%2025&oracion=8&nivel=4 [32m200 [0m4.134 ms - 2[0m
+8
+Refilling Level bag...
+Audio Asignado: 9.5
+[0mGET /?audiosCompleted=8 [32m200 [0m108.582 ms - -[0m
+Upcoming response from: 
+::ffff:152.170.236.36
+::ffff:152.170.236.36
+infoPersonal: 
+	Oracion: 9
+	Nivel: 5
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: estadounidense
+	transcription: prometió a esos cuñados
+1508454545896
+[0mGET /response?nac=estadounidense&trans=prometi%C3%B3%20a%20esos%20cu%C3%B1ados&genero=M&provincia=Buenos%20Aires&edad=18%2025&oracion=9&nivel=5 [32m200 [0m4.950 ms - 2[0m
+8,9
+Audio Asignado: 10.4
+[0mGET /?audiosCompleted=8,9 [32m200 [0m121.681 ms - -[0m
+Upcoming response from: 
+::ffff:152.170.236.36
+::ffff:152.170.236.36
+infoPersonal: 
+	Oracion: 10
+	Nivel: 4
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: estadounidense
+	transcription: el nuevo dj argentino perdió su vaso
+1508454566019
+[0mGET /response?nac=estadounidense&trans=el%20nuevo%20dj%20argentino%20perdi%C3%B3%20su%20vaso&genero=M&provincia=Buenos%20Aires&edad=18%2025&oracion=10&nivel=4 [32m200 [0m4.806 ms - 2[0m
+Upcoming response from: 
+152.168.190.60
+152.168.190.60
+infoPersonal: 
+	Oracion: 1
+	Nivel: 4
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Ninguna
+	transcription: Mi monzonia la cigüeña recorrio la esquina
+1508454694881
+[0mGET /response?nac=Ninguna&trans=Mi%20monzonia%20la%20cig%C3%BCe%C3%B1a%20recorrio%20la%20esquina&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=1&nivel=4 [32m200 [0m5.291 ms - 2[0m
+1
+Audio Asignado: 2.2
+[0mGET /?audiosCompleted=1 [32m200 [0m122.464 ms - -[0m
+1
+Audio Asignado: 2.0
+[0mGET /?audiosCompleted=1 [32m200 [0m110.180 ms - -[0m
+Upcoming response from: 
+152.168.190.60
+152.168.190.60
+infoPersonal: 
+	Oracion: 2
+	Nivel: 0
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Ninguna 
+	transcription: Aquel fuerte vidrio prefirio aquel boton
+1508454735152
+[0mGET /response?nac=Ninguna%20&trans=Aquel%20fuerte%20vidrio%20prefirio%20aquel%20boton&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=2&nivel=0 [32m200 [0m4.746 ms - 2[0m
+1,2
+Audio Asignado: 3.3
+[0mGET /?audiosCompleted=1,2 [32m200 [0m118.129 ms - -[0m
+Upcoming response from: 
+152.168.190.60
+152.168.190.60
+infoPersonal: 
+	Oracion: 3
+	Nivel: 3
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Ninguna
+	transcription: Este en...fue comprar nuestro corchete
+1508454780648
+[0mGET /response?nac=Ninguna&trans=Este%20en...fue%20comprar%20nuestro%20corchete&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=3&nivel=3 [32m200 [0m4.101 ms - 2[0m
+undefined
+Audio Asignado: 6.3
+[0mGET / [32m200 [0m115.311 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m12.015 ms - 254[0m
+undefined
+Audio Asignado: 8.0
+[0mGET / [32m200 [0m132.391 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m12.947 ms - 254[0m
+undefined
+Audio Asignado: 5.3
+[0mGET / [32m200 [0m112.083 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m13.465 ms - 254[0m
+undefined
+Audio Asignado: 9.5
+[0mGET / [32m200 [0m138.577 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m15.234 ms - 254[0m
+undefined
+Audio Asignado: 2.4
+[0mGET / [32m200 [0m100.906 ms - -[0m
+undefined
+Audio Asignado: 10.2
+[0mGET / [32m200 [0m99.999 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m8.698 ms - 254[0m
+Upcoming response from: 
+::ffff:190.19.35.120
+::ffff:190.19.35.120
+infoPersonal: 
+	Oracion: 10
+	Nivel: 2
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Formosa
+Rtas 
+	Lang: español
+	transcription: el brillo argentino perdio su vaso
+1508455484180
+[0mGET /response?nac=espa%C3%B1ol&trans=el%20brillo%20argentino%20perdio%20su%20vaso&genero=F&provincia=Formosa&edad=26%2035&oracion=10&nivel=2 [32m200 [0m5.024 ms - 2[0m
+10
+Audio Asignado: 1.1
+[0mGET /?audiosCompleted=10 [32m200 [0m106.772 ms - -[0m
+Upcoming response from: 
+::ffff:190.19.35.120
+::ffff:190.19.35.120
+infoPersonal: 
+	Oracion: 1
+	Nivel: 1
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Formosa
+Rtas 
+	Lang: estadounidense
+	transcription: mi montaña aguileña recorrio la esquina
+1508455523721
+[0mGET /response?nac=estadounidense&trans=mi%20monta%C3%B1a%20aguile%C3%B1a%20recorrio%20la%20esquina&genero=F&provincia=Formosa&edad=26%2035&oracion=1&nivel=1 [32m200 [0m4.160 ms - 2[0m
+10,1
+Refilling Level bag...
+Audio Asignado: 2.4
+[0mGET /?audiosCompleted=10,1 [32m200 [0m97.109 ms - -[0m
+Upcoming response from: 
+::ffff:190.19.35.120
+::ffff:190.19.35.120
+infoPersonal: 
+	Oracion: 2
+	Nivel: 4
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Formosa
+Rtas 
+	Lang: inglesa
+	transcription: aquel blablaba prefirio aquel boton
+1508455579449
+[0mGET /response?nac=inglesa&trans=aquel%20blablaba%20prefirio%20aquel%20boton&genero=F&provincia=Formosa&edad=26%2035&oracion=2&nivel=4 [32m200 [0m5.848 ms - 2[0m
+10,1,2
+Audio Asignado: 3.5
+[0mGET /?audiosCompleted=10,1,2 [32m200 [0m233.790 ms - -[0m
+Upcoming response from: 
+::ffff:190.19.35.120
+::ffff:190.19.35.120
+infoPersonal: 
+	Oracion: 3
+	Nivel: 5
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Formosa
+Rtas 
+	Lang: ingles
+	transcription: este contrato fue comprado nuestro corchete
+1508455612453
+[0mGET /response?nac=ingles&trans=este%20contrato%20fue%20comprado%20nuestro%20corchete&genero=F&provincia=Formosa&edad=26%2035&oracion=3&nivel=5 [32m200 [0m4.300 ms - 2[0m
+undefined
+Audio Asignado: 6.1
+[0mGET / [32m200 [0m213.824 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m28.205 ms - 254[0m
+undefined
+Audio Asignado: 1.2
+[0mGET / [32m200 [0m164.325 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m23.958 ms - 254[0m
+Upcoming response from: 
+::ffff:190.173.202.22
+::ffff:190.173.202.22
+infoPersonal: 
+	Oracion: 6
+	Nivel: 1
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Argentino
+	transcription: Su profundo riñón apoyo a julio
+1508456242086
+[0mGET /response?nac=Argentino&trans=Su%20profundo%20ri%C3%B1%C3%B3n%20apoyo%20a%20julio&genero=F&provincia=Buenos%20Aires&edad=46%2055&oracion=6&nivel=1 [32m200 [0m4.593 ms - 2[0m
+6
+Audio Asignado: 7.1
+[0mGET /?audiosCompleted=6 [32m200 [0m139.104 ms - -[0m
+Upcoming response from: 
+::ffff:190.173.202.22
+::ffff:190.173.202.22
+infoPersonal: 
+	Oracion: 7
+	Nivel: 1
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Japones
+	transcription: Enfrió churrasco frío de polonia
+1508456303185
+[0mGET /response?nac=Japones&trans=Enfri%C3%B3%20churrasco%20fr%C3%ADo%20de%20polonia&genero=F&provincia=Buenos%20Aires&edad=46%2055&oracion=7&nivel=1 [32m200 [0m4.539 ms - 2[0m
+Upcoming response from: 
+::ffff:181.167.224.209
+::ffff:181.167.224.209
+infoPersonal: 
+	Oracion: 1
+	Nivel: 2
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Chubut
+Rtas 
+	Lang: Boliviana
+	transcription: Mi montaña recorrio la esquina
+1508456356805
+[0mGET /response?nac=Boliviana&trans=Mi%20monta%C3%B1a%20recorrio%20la%20esquina&genero=M&provincia=Chubut&edad=18%2025&oracion=1&nivel=2 [32m200 [0m5.304 ms - 2[0m
+1
+Audio Asignado: 2.2
+[0mGET /?audiosCompleted=1 [32m200 [0m124.385 ms - -[0m
+Upcoming response from: 
+::ffff:181.167.224.209
+::ffff:181.167.224.209
+infoPersonal: 
+	Oracion: 2
+	Nivel: 2
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Chubut
+Rtas 
+	Lang: Inglesa
+	transcription: Aqueo fuerte vidrio perforo aquel boton
+1508456392176
+[0mGET /response?nac=Inglesa&trans=Aqueo%20fuerte%20vidrio%20perforo%20aquel%20boton&genero=M&provincia=Chubut&edad=18%2025&oracion=2&nivel=2 [32m200 [0m10.361 ms - 2[0m
+1,2
+Audio Asignado: 3.3
+[0mGET /?audiosCompleted=1,2 [32m200 [0m125.819 ms - -[0m
+Upcoming response from: 
+::ffff:181.167.224.209
+::ffff:181.167.224.209
+infoPersonal: 
+	Oracion: 3
+	Nivel: 3
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Chubut
+Rtas 
+	Lang: Inglesa
+	transcription: Este nuestro corchete
+1508456421193
+[0mGET /response?nac=Inglesa&trans=Este%20nuestro%20corchete&genero=M&provincia=Chubut&edad=18%2025&oracion=3&nivel=3 [32m200 [0m4.510 ms - 2[0m
+1,2,3
+Audio Asignado: 4.0
+[0mGET /?audiosCompleted=1,2,3 [32m200 [0m108.600 ms - -[0m
+undefined
+Audio Asignado: 6.4
+[0mGET / [32m200 [0m110.506 ms - -[0m
+Upcoming response from: 
+::ffff:181.167.224.209
+::ffff:181.167.224.209
+infoPersonal: 
+	Oracion: 4
+	Nivel: 0
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Chubut
+Rtas 
+	Lang: Argentina
+	transcription: Tu estrecho posa basos grito la fechoria
+1508456450683
+[0mGET /response?nac=Argentina&trans=Tu%20estrecho%20posa%20basos%20grito%20la%20fechoria&genero=M&provincia=Chubut&edad=18%2025&oracion=4&nivel=0 [32m200 [0m4.589 ms - 2[0m
+1,2,3,4
+Refilling Level bag...
+Audio Asignado: 5.5
+[0mGET /?audiosCompleted=1,2,3,4 [32m200 [0m110.548 ms - -[0m
+Upcoming response from: 
+::ffff:181.167.224.209
+::ffff:181.167.224.209
+infoPersonal: 
+	Oracion: 5
+	Nivel: 5
+	Genero: M
+	Rango Edad: 18 25
+	Provincia: Chubut
+Rtas 
+	Lang: Estadounidense
+	transcription: Nuestro libre este chupetin
+1508456480529
+[0mGET /response?nac=Estadounidense&trans=Nuestro%20libre%20este%20chupetin&genero=M&provincia=Chubut&edad=18%2025&oracion=5&nivel=5 [32m200 [0m39.785 ms - 2[0m
+undefined
+Audio Asignado: 4.3
+[0mGET / [32m200 [0m118.257 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m17.222 ms - 254[0m
+undefined
+Audio Asignado: 5.5
+[0mGET / [32m200 [0m132.393 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m10.512 ms - 254[0m
+Upcoming response from: 
+::ffff:168.232.97.138
+::ffff:168.232.97.138
+infoPersonal: 
+	Oracion: 4
+	Nivel: 3
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Francés 
+	transcription: Frechoia
+1508456657469
+[0mGET /response?nac=Franc%C3%A9s%20&trans=Frechoia&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=4&nivel=3 [32m200 [0m4.735 ms - 2[0m
+4
+Audio Asignado: 5.4
+[0mGET /?audiosCompleted=4 [32m200 [0m112.101 ms - -[0m
+Upcoming response from: 
+::ffff:181.47.137.143
+::ffff:181.47.137.143
+infoPersonal: 
+	Oracion: 5
+	Nivel: 5
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Buenos Aires
+Rtas 
+	Lang: francés
+	transcription: nuestro chupetin
+1508456701579
+[0mGET /response?nac=franc%C3%A9s&trans=nuestro%20chupetin&genero=F&provincia=Buenos%20Aires&edad=26%2035&oracion=5&nivel=5 [32m200 [0m4.890 ms - 2[0m
+5
+Audio Asignado: 6.0
+[0mGET /?audiosCompleted=5 [32m200 [0m117.898 ms - -[0m
+Upcoming response from: 
+::ffff:168.232.97.138
+::ffff:168.232.97.138
+infoPersonal: 
+	Oracion: 5
+	Nivel: 4
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Portugués
+	transcription: Nuestro pequin
+1508456719943
+[0mGET /response?nac=Portugu%C3%A9s&trans=Nuestro%20pequin&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=5&nivel=4 [32m200 [0m4.166 ms - 2[0m
+4,5
+Audio Asignado: 6.2
+[0mGET /?audiosCompleted=4,5 [32m200 [0m107.330 ms - -[0m
+invalid data!
+[0mGET /response?nac=Oriental&trans=&genero=F&provincia=Buenos%20Aires&edad=46%2055&oracion=6&nivel=4 [32m200 [0m2.144 ms - 7[0m
+Upcoming response from: 
+::ffff:181.47.137.143
+::ffff:181.47.137.143
+infoPersonal: 
+	Oracion: 6
+	Nivel: 0
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Argentina
+	transcription: su profundo riñon apoyo a Julio
+1508456746847
+[0mGET /response?nac=Argentina&trans=su%20profundo%20ri%C3%B1on%20apoyo%20a%20Julio&genero=F&provincia=Buenos%20Aires&edad=26%2035&oracion=6&nivel=0 [32m200 [0m4.692 ms - 2[0m
+5,6
+Audio Asignado: 7.1
+[0mGET /?audiosCompleted=5,6 [32m200 [0m116.187 ms - -[0m
+Upcoming response from: 
+::ffff:168.232.97.138
+::ffff:168.232.97.138
+infoPersonal: 
+	Oracion: 6
+	Nivel: 2
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Argentino 
+	transcription: Su profundo riñon julio 
+1508456756095
+[0mGET /response?nac=Argentino%20&trans=Su%20profundo%20ri%C3%B1on%20julio%20&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=6&nivel=2 [32m200 [0m4.143 ms - 2[0m
+4,5,6
+Audio Asignado: 7.3
+[0mGET /?audiosCompleted=4,5,6 [32m200 [0m116.684 ms - -[0m
+6
+Refilling Level bag...
+Audio Asignado: 7.2
+[0mGET /?audiosCompleted=6 [32m200 [0m92.818 ms - -[0m
+Upcoming response from: 
+::ffff:181.47.137.143
+::ffff:181.47.137.143
+infoPersonal: 
+	Oracion: 7
+	Nivel: 1
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Española
+	transcription: el frio churrasco frio de Polonia
+1508456779675
+[0mGET /response?nac=Espa%C3%B1ola&trans=el%20frio%20churrasco%20frio%20de%20Polonia&genero=F&provincia=Buenos%20Aires&edad=26%2035&oracion=7&nivel=1 [32m200 [0m4.034 ms - 2[0m
+5,6,7
+Audio Asignado: 8.4
+[0mGET /?audiosCompleted=5,6,7 [32m200 [0m110.305 ms - -[0m
+Upcoming response from: 
+::ffff:168.232.97.138
+::ffff:168.232.97.138
+infoPersonal: 
+	Oracion: 7
+	Nivel: 3
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Argentino 
+	transcription: El frío churrasco de Polonia 
+1508456792743
+[0mGET /response?nac=Argentino%20&trans=El%20fr%C3%ADo%20churrasco%20de%20Polonia%20&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=7&nivel=3 [32m200 [0m11.601 ms - 2[0m
+4,5,6,7
+Audio Asignado: 8.1
+[0mGET /?audiosCompleted=4,5,6,7 [32m200 [0m113.198 ms - -[0m
+Upcoming response from: 
+::ffff:181.47.137.143
+::ffff:181.47.137.143
+infoPersonal: 
+	Oracion: 8
+	Nivel: 4
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Buenos Aires
+Rtas 
+	Lang: inglés
+	transcription: sonrieron en mi circulo
+1508456810353
+[0mGET /response?nac=ingl%C3%A9s&trans=sonrieron%20en%20mi%20circulo&genero=F&provincia=Buenos%20Aires&edad=26%2035&oracion=8&nivel=4 [32m200 [0m4.651 ms - 2[0m
+Upcoming response from: 
+::ffff:138.36.96.114
+::ffff:138.36.96.114
+infoPersonal: 
+	Oracion: 7
+	Nivel: 2
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Ingles
+	transcription: Enfrió churrasco de polonia
+1508456811455
+[0mGET /response?nac=Ingles&trans=Enfri%C3%B3%20churrasco%20de%20polonia&genero=F&provincia=Buenos%20Aires&edad=46%2055&oracion=7&nivel=2 [32m200 [0m3.680 ms - 2[0m
+5,6,7,8
+Audio Asignado: 9.5
+[0mGET /?audiosCompleted=5,6,7,8 [32m200 [0m108.104 ms - -[0m
+6,7
+Audio Asignado: 8.0
+[0mGET /?audiosCompleted=6,7 [32m200 [0m90.278 ms - -[0m
+Upcoming response from: 
+::ffff:181.47.137.143
+::ffff:181.47.137.143
+infoPersonal: 
+	Oracion: 9
+	Nivel: 5
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Buenos Aires
+Rtas 
+	Lang: inglés
+	transcription: ese gruñón esos cuñados
+1508456844668
+[0mGET /response?nac=ingl%C3%A9s&trans=ese%20gru%C3%B1%C3%B3n%20esos%20cu%C3%B1ados&genero=F&provincia=Buenos%20Aires&edad=26%2035&oracion=9&nivel=5 [32m200 [0m3.529 ms - 2[0m
+Upcoming response from: 
+::ffff:168.232.97.138
+::ffff:168.232.97.138
+infoPersonal: 
+	Oracion: 8
+	Nivel: 1
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Argentino
+	transcription: Las acombojadas cotorras sonrieron a mi círculo 
+1508456846389
+[0mGET /response?nac=Argentino&trans=Las%20acombojadas%20cotorras%20sonrieron%20a%20mi%20c%C3%ADrculo%20&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=8&nivel=1 [32m200 [0m4.706 ms - 2[0m
+Upcoming response from: 
+::ffff:138.36.96.114
+::ffff:138.36.96.114
+infoPersonal: 
+	Oracion: 8
+	Nivel: 0
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Latino
+	transcription: Las acongojadas cotorras sonrieron a mi circulo
+1508456868009
+[0mGET /response?nac=Latino&trans=Las%20acongojadas%20cotorras%20sonrieron%20a%20mi%20circulo&genero=F&provincia=Buenos%20Aires&edad=46%2055&oracion=8&nivel=0 [32m200 [0m3.763 ms - 2[0m
+6,7,8
+Audio Asignado: 9.3
+[0mGET /?audiosCompleted=6,7,8 [32m200 [0m114.485 ms - -[0m
+Upcoming response from: 
+::ffff:138.36.96.114
+::ffff:138.36.96.114
+infoPersonal: 
+	Oracion: 9
+	Nivel: 3
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Anglo parlante
+	transcription: Ese gruñón perro a esos cuñados
+1508456922995
+[0mGET /response?nac=Anglo%20parlante&trans=Ese%20gru%C3%B1%C3%B3n%20perro%20a%20esos%20cu%C3%B1ados&genero=F&provincia=Buenos%20Aires&edad=46%2055&oracion=9&nivel=3 [32m200 [0m4.101 ms - 2[0m
+6,7,8,9
+Refilling Level bag...
+Audio Asignado: 10.2
+[0mGET /?audiosCompleted=6,7,8,9 [32m200 [0m105.899 ms - -[0m
+undefined
+Audio Asignado: 7.4
+[0mGET / [32m200 [0m109.677 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m12.993 ms - 254[0m
+Upcoming response from: 
+::ffff:138.36.96.114
+::ffff:138.36.96.114
+infoPersonal: 
+	Oracion: 10
+	Nivel: 2
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Buenos Aires
+Rtas 
+	Lang: .?
+	transcription: El argentino perdió su vaso
+1508456974934
+[0mGET /response?nac=.?&trans=El%20argentino%20perdi%C3%B3%20su%20vaso&genero=F&provincia=Buenos%20Aires&edad=46%2055&oracion=10&nivel=2 [32m200 [0m3.904 ms - 2[0m
+undefined
+Audio Asignado: 1.5
+[0mGET / [32m200 [0m104.222 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m9.384 ms - 254[0m
+invalid data!
+[0mGET /response?nac=Chino%20&trans=&genero=F&provincia=Capital%20Federal&edad=46%2055&oracion=7&nivel=4 [32m200 [0m1.050 ms - 7[0m
+7
+Audio Asignado: 8.1
+[0mGET /?audiosCompleted=7 [32m200 [0m101.877 ms - -[0m
+Upcoming response from: 
+::ffff:200.59.116.207
+::ffff:200.59.116.207
+infoPersonal: 
+	Oracion: 8
+	Nivel: 1
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Capital Federal
+Rtas 
+	Lang: Latino
+	transcription: Las acongojadas cotorras sonrieron a mi círculo
+1508457198579
+[0mGET /response?nac=Latino&trans=Las%20acongojadas%20cotorras%20sonrieron%20a%20mi%20c%C3%ADrculo&genero=F&provincia=Capital%20Federal&edad=46%2055&oracion=8&nivel=1 [32m200 [0m4.826 ms - 2[0m
+7,8
+Audio Asignado: 9.4
+[0mGET /?audiosCompleted=7,8 [32m200 [0m184.460 ms - -[0m
+Upcoming response from: 
+::ffff:181.118.77.208
+::ffff:181.118.77.208
+infoPersonal: 
+	Oracion: 1
+	Nivel: 5
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Buenos Aires
+Rtas 
+	Lang: japones
+	transcription: ---------------a la esquina
+1508457232730
+[0mGET /response?nac=japones&trans=---------------a%20la%20esquina&genero=F&provincia=Buenos%20Aires&edad=26%2035&oracion=1&nivel=5 [32m200 [0m10.939 ms - 2[0m
+1
+Audio Asignado: 2.3
+[0mGET /?audiosCompleted=1 [32m200 [0m207.008 ms - -[0m
+Upcoming response from: 
+::ffff:200.59.116.207
+::ffff:200.59.116.207
+infoPersonal: 
+	Oracion: 9
+	Nivel: 4
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Capital Federal
+Rtas 
+	Lang: Ruso
+	transcription: Rsts reunion que prometió a sus...
+1508457256127
+[0mGET /response?nac=Ruso&trans=Rsts%20reunion%20que%20prometi%C3%B3%20a%20sus...&genero=F&provincia=Capital%20Federal&edad=46%2055&oracion=9&nivel=4 [32m200 [0m4.272 ms - 2[0m
+7,8,9
+Audio Asignado: 10.5
+[0mGET /?audiosCompleted=7,8,9 [32m200 [0m193.207 ms - -[0m
+Upcoming response from: 
+::ffff:200.59.116.207
+::ffff:200.59.116.207
+infoPersonal: 
+	Oracion: 10
+	Nivel: 5
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Capital Federal
+Rtas 
+	Lang: Inglés 
+	transcription: ...el argentino perdió su vaso.
+1508457309897
+[0mGET /response?nac=Ingl%C3%A9s%20&trans=...el%20argentino%20perdi%C3%B3%20su%20vaso.&genero=F&provincia=Capital%20Federal&edad=46%2055&oracion=10&nivel=5 [32m200 [0m4.100 ms - 2[0m
+7,8,9,10
+Audio Asignado: 1.0
+[0mGET /?audiosCompleted=7,8,9,10 [32m200 [0m132.903 ms - -[0m
+undefined
+Audio Asignado: 3.2
+[0mGET / [32m200 [0m138.781 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m14.028 ms - 254[0m
+Upcoming response from: 
+::ffff:200.59.116.207
+::ffff:200.59.116.207
+infoPersonal: 
+	Oracion: 1
+	Nivel: 0
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Capital Federal
+Rtas 
+	Lang: Latino
+	transcription: Mi montaña aguileña recorrió la esquina
+1508457375248
+[0mGET /response?nac=Latino&trans=Mi%20monta%C3%B1a%20aguile%C3%B1a%20recorri%C3%B3%20la%20esquina&genero=F&provincia=Capital%20Federal&edad=46%2055&oracion=1&nivel=0 [32m200 [0m8.100 ms - 2[0m
+7,8,9
+Refilling Level bag...
+Audio Asignado: 10.0
+[0mGET /?audiosCompleted=7,8,9 [32m200 [0m115.739 ms - -[0m
+7,8
+Audio Asignado: 9.4
+[0mGET /?audiosCompleted=7,8 [32m200 [0m110.131 ms - -[0m
+7
+Audio Asignado: 8.5
+[0mGET /?audiosCompleted=7 [32m200 [0m99.899 ms - -[0m
+undefined
+Audio Asignado: 4.1
+[0mGET / [32m200 [0m123.411 ms - -[0m
+undefined
+Audio Asignado: 2.2
+[0mGET / [32m200 [0m120.690 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m12.746 ms - 254[0m
+undefined
+Audio Asignado: 7.0
+[0mGET / [32m200 [0m121.199 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m10.587 ms - 254[0m
+Upcoming response from: 
+::ffff:181.192.62.237
+::ffff:181.192.62.237
+infoPersonal: 
+	Oracion: 2
+	Nivel: 2
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: paraguay
+	transcription: aquel vidrio presiono aquel boton
+1508457650923
+[0mGET /response?nac=paraguay&trans=aquel%20vidrio%20presiono%20aquel%20boton&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=2&nivel=2 [32m200 [0m3.862 ms - 2[0m
+2
+Audio Asignado: 3.3
+[0mGET /?audiosCompleted=2 [32m200 [0m124.803 ms - -[0m
+Upcoming response from: 
+::ffff:181.192.62.237
+::ffff:181.192.62.237
+infoPersonal: 
+	Oracion: 3
+	Nivel: 3
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: gallego
+	transcription: este enfollado comprara nuestro corchete
+1508457704253
+[0mGET /response?nac=gallego&trans=este%20enfollado%20comprara%20nuestro%20corchete&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=3&nivel=3 [32m200 [0m4.401 ms - 2[0m
+2,3
+Audio Asignado: 4.1
+[0mGET /?audiosCompleted=2,3 [32m200 [0m111.072 ms - -[0m
+undefined
+Audio Asignado: 8.3
+[0mGET / [32m200 [0m120.501 ms - -[0m
+Upcoming response from: 
+::ffff:181.192.62.237
+::ffff:181.192.62.237
+infoPersonal: 
+	Oracion: 4
+	Nivel: 1
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: español de españa
+	transcription: tu estrecho posavasos grito la fechoria
+1508457738117
+[0mGET /response?nac=espa%C3%B1ol%20de%20espa%C3%B1a&trans=tu%20estrecho%20posavasos%20grito%20la%20fechoria&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=4&nivel=1 [32m200 [0m5.850 ms - 2[0m
+2,3,4
+Audio Asignado: 5.2
+[0mGET /?audiosCompleted=2,3,4 [32m200 [0m121.866 ms - -[0m
+Upcoming response from: 
+::ffff:181.192.62.237
+::ffff:181.192.62.237
+infoPersonal: 
+	Oracion: 5
+	Nivel: 2
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: ciudad de buenos aires
+	transcription: nuestro nublado concluyo este chupetin
+1508457779610
+[0mGET /response?nac=ciudad%20de%20buenos%20aires&trans=nuestro%20nublado%20concluyo%20este%20chupetin&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=5&nivel=2 [32m200 [0m3.670 ms - 2[0m
+Upcoming response from: 
+::ffff:190.192.207.3
+::ffff:190.192.207.3
+infoPersonal: 
+	Oracion: 8
+	Nivel: 3
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Misiones
+Rtas 
+	Lang: Inglesa
+	transcription: Mi círculo 
+1508457849319
+[0mGET /response?nac=Inglesa&trans=Mi%20c%C3%ADrculo%20&genero=F&provincia=Misiones&edad=26%2035&oracion=8&nivel=3 [32m200 [0m4.326 ms - 2[0m
+8
+Refilling Level bag...
+Audio Asignado: 9.5
+[0mGET /?audiosCompleted=8 [32m200 [0m112.978 ms - -[0m
+Upcoming response from: 
+::ffff:190.192.207.3
+::ffff:190.192.207.3
+infoPersonal: 
+	Oracion: 9
+	Nivel: 5
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Misiones
+Rtas 
+	Lang: Inglesa
+	transcription: Reunión cuñados
+1508457890700
+[0mGET /response?nac=Inglesa&trans=Reuni%C3%B3n%20cu%C3%B1ados&genero=F&provincia=Misiones&edad=26%2035&oracion=9&nivel=5 [32m200 [0m4.461 ms - 2[0m
+undefined
+Audio Asignado: 9.0
+[0mGET / [32m200 [0m116.390 ms - -[0m
+undefined
+Audio Asignado: 3.0
+[0mGET / [32m200 [0m117.605 ms - -[0m
+Upcoming response from: 
+::ffff:181.231.109.171
+::ffff:181.231.109.171
+infoPersonal: 
+	Oracion: 3
+	Nivel: 2
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Boliviano
+	transcription: Este juez comprara nuestro 
+1508458247836
+[0mGET /response?nac=Boliviano&trans=Este%20juez%20comprara%20nuestro%20&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=3&nivel=2 [32m200 [0m4.674 ms - 2[0m
+3
+Audio Asignado: 4.0
+[0mGET /?audiosCompleted=3 [32m200 [0m109.165 ms - -[0m
+Upcoming response from: 
+::ffff:168.90.11.18
+::ffff:168.90.11.18
+infoPersonal: 
+	Oracion: 3
+	Nivel: 0
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Capital Federal
+Rtas 
+	Lang: Indefinida
+	transcription: Este enjoyado fue comprado corchete
+1508458316637
+[0mGET /response?nac=Indefinida&trans=Este%20enjoyado%20fue%20comprado%20corchete&genero=F&provincia=Capital%20Federal&edad=46%2055&oracion=3&nivel=0 [32m200 [0m4.631 ms - 2[0m
+Upcoming response from: 
+::ffff:181.231.109.171
+::ffff:181.231.109.171
+infoPersonal: 
+	Oracion: 4
+	Nivel: 0
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Argentina 
+	transcription: Tu estrecho posa vasos grito
+1508458319031
+[0mGET /response?nac=Argentina%20&trans=Tu%20estrecho%20posa%20vasos%20grito&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=4&nivel=0 [32m200 [0m4.933 ms - 2[0m
+3,4
+Audio Asignado: 5.4
+[0mGET /?audiosCompleted=3,4 [32m200 [0m105.935 ms - -[0m
+3
+Audio Asignado: 4.2
+[0mGET /?audiosCompleted=3 [32m200 [0m98.936 ms - -[0m
+Upcoming response from: 
+::ffff:168.90.11.18
+::ffff:168.90.11.18
+infoPersonal: 
+	Oracion: 4
+	Nivel: 2
+	Genero: F
+	Rango Edad: 46 55
+	Provincia: Capital Federal
+Rtas 
+	Lang: Española
+	transcription: Su estrecho posavaso fechoría 
+1508458368822
+[0mGET /response?nac=Espa%C3%B1ola&trans=Su%20estrecho%20posavaso%20fechor%C3%ADa%20&genero=F&provincia=Capital%20Federal&edad=46%2055&oracion=4&nivel=2 [32m200 [0m4.314 ms - 2[0m
+undefined
+Audio Asignado: 6.0
+[0mGET / [32m200 [0m122.181 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m10.006 ms - 254[0m
+Upcoming response from: 
+::ffff:181.231.109.171
+::ffff:181.231.109.171
+infoPersonal: 
+	Oracion: 5
+	Nivel: 4
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Estadounidense
+	transcription: Nuestro nublado construyó este chupetin
+1508458383036
+[0mGET /response?nac=Estadounidense&trans=Nuestro%20nublado%20construy%C3%B3%20este%20chupetin&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=5&nivel=4 [32m200 [0m4.126 ms - 2[0m
+3,4,5
+Audio Asignado: 6.1
+[0mGET /?audiosCompleted=3,4,5 [32m200 [0m119.724 ms - -[0m
+Upcoming response from: 
+::ffff:181.231.109.171
+::ffff:181.231.109.171
+infoPersonal: 
+	Oracion: 6
+	Nivel: 1
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Colombiano
+	transcription: Su profundo riñón apoyo a julio 
+1508458435563
+[0mGET /response?nac=Colombiano&trans=Su%20profundo%20ri%C3%B1%C3%B3n%20apoyo%20a%20julio%20&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=6&nivel=1 [32m200 [0m10.041 ms - 2[0m
+3,4,5,6
+Audio Asignado: 7.3
+[0mGET /?audiosCompleted=3,4,5,6 [32m200 [0m120.476 ms - -[0m
+Upcoming response from: 
+::ffff:181.231.109.171
+::ffff:181.231.109.171
+infoPersonal: 
+	Oracion: 7
+	Nivel: 3
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Polonia
+	transcription: El frío churrasco 
+1508458469331
+[0mGET /response?nac=Polonia&trans=El%20fr%C3%ADo%20churrasco%20&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=7&nivel=3 [32m200 [0m5.294 ms - 2[0m
+undefined
+Audio Asignado: 6.2
+[0mGET / [32m200 [0m64.910 ms - 11619[0m
+undefined
+Audio Asignado: 2.5
+[0mGET / [32m200 [0m232.408 ms - -[0m
+Upcoming response from: 
+::ffff:190.49.0.160
+::ffff:190.49.0.160
+infoPersonal: 
+	Oracion: 2
+	Nivel: 5
+	Genero: F
+	Rango Edad: 36 45
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Estados unidos
+	transcription: Botton prefer
+1508459444952
+[0mGET /response?nac=Estados%20unidos&trans=Botton%20prefer&genero=F&provincia=Buenos%20Aires&edad=36%2045&oracion=2&nivel=5 [32m200 [0m4.474 ms - 2[0m
+2
+Refilling Level bag...
+Audio Asignado: 3.3
+[0mGET /?audiosCompleted=2 [32m200 [0m242.297 ms - -[0m
+undefined
+Audio Asignado: 5.0
+[0mGET / [32m200 [0m159.561 ms - -[0m
+Upcoming response from: 
+::ffff:190.49.0.160
+::ffff:190.49.0.160
+infoPersonal: 
+	Oracion: 3
+	Nivel: 3
+	Genero: F
+	Rango Edad: 36 45
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Argentino
+	transcription: Esté nuestro corchete
+1508459499018
+[0mGET /response?nac=Argentino&trans=Est%C3%A9%20nuestro%20corchete&genero=F&provincia=Buenos%20Aires&edad=36%2045&oracion=3&nivel=3 [32m200 [0m4.315 ms - 2[0m
+2,3
+Audio Asignado: 4.5
+[0mGET /?audiosCompleted=2,3 [32m200 [0m132.708 ms - -[0m
+Upcoming response from: 
+::ffff:201.212.109.47
+::ffff:201.212.109.47
+infoPersonal: 
+	Oracion: 5
+	Nivel: 0
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Chubut
+Rtas 
+	Lang: Española
+	transcription: Nuestro nublado tigre concluyó a esta chupetin 
+1508459566794
+[0mGET /response?nac=Espa%C3%B1ola&trans=Nuestro%20nublado%20tigre%20concluy%C3%B3%20a%20esta%20chupetin%20&genero=F&provincia=Chubut&edad=18%2025&oracion=5&nivel=0 [32m200 [0m5.127 ms - 2[0m
+undefined
+Audio Asignado: 4.2
+[0mGET / [32m200 [0m132.371 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m20.100 ms - 254[0m
+undefined
+Audio Asignado: 2.0
+[0mGET / [32m200 [0m127.345 ms - -[0m
+invalid data!
+[0mGET /response?nac=Pa%C3%ADs%20n%C3%B3rdico%20&trans=&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=4&nivel=2 [32m200 [0m1.459 ms - 7[0m
+undefined
+Audio Asignado: 5.1
+[0mGET / [32m200 [0m116.320 ms - -[0m
+4
+Audio Asignado: 5.2
+[0mGET /?audiosCompleted=4 [32m200 [0m102.059 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m25.701 ms - 254[0m
+invalid data!
+[0mGET /response?nac=Espa%C3%B1ol%20&trans=&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=5&nivel=2 [32m200 [0m0.972 ms - 7[0m
+4,5
+Audio Asignado: 6.0
+[0mGET /?audiosCompleted=4,5 [32m200 [0m118.336 ms - -[0m
+Upcoming response from: 
+::ffff:181.46.88.108
+::ffff:181.46.88.108
+infoPersonal: 
+	Oracion: 6
+	Nivel: 0
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Español 
+	transcription: Su profundo riñón apoyo a Julio 
+1508460014327
+[0mGET /response?nac=Espa%C3%B1ol%20&trans=Su%20profundo%20ri%C3%B1%C3%B3n%20apoyo%20a%20Julio%20&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=6&nivel=0 [32m200 [0m4.011 ms - 2[0m
+4,5,6
+Audio Asignado: 7.1
+[0mGET /?audiosCompleted=4,5,6 [32m200 [0m121.954 ms - -[0m
+Upcoming response from: 
+::ffff:181.46.88.108
+::ffff:181.46.88.108
+infoPersonal: 
+	Oracion: 7
+	Nivel: 1
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Español 
+	transcription: Churrasco, Polonia 
+1508460035633
+[0mGET /response?nac=Espa%C3%B1ol%20&trans=Churrasco,%20Polonia%20&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=7&nivel=1 [32m200 [0m4.521 ms - 2[0m
+4,5,6,7
+Audio Asignado: 8.4
+[0mGET /?audiosCompleted=4,5,6,7 [32m200 [0m113.444 ms - -[0m
+invalid data!
+[0mGET /response?nac=Espa%C3%B1ol%20&trans=&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=8&nivel=4 [32m200 [0m1.035 ms - 7[0m
+undefined
+Audio Asignado: 10.5
+[0mGET / [32m200 [0m114.951 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m12.576 ms - 254[0m
+undefined
+Refilling Audio bag...
+Audio Asignado: 10.5
+[0mGET / [32m200 [0m118.984 ms - -[0m
+Upcoming response from: 
+::ffff:186.136.116.171
+::ffff:186.136.116.171
+infoPersonal: 
+	Oracion: 10
+	Nivel: 5
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Español
+	transcription: test
+1508460406332
+[0mGET /response?nac=Espa%C3%B1ol&trans=test&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=10&nivel=5 [32m200 [0m3.964 ms - 2[0m
+10
+Refilling Level bag...
+Audio Asignado: 1.5
+[0mGET /?audiosCompleted=10 [32m200 [0m112.242 ms - -[0m
+Upcoming response from: 
+::ffff:186.136.116.171
+::ffff:186.136.116.171
+infoPersonal: 
+	Oracion: 1
+	Nivel: 5
+	Genero: F
+	Rango Edad: 18 25
+	Provincia: Buenos Aires
+Rtas 
+	Lang: test 
+	transcription: test2
+1508460595666
+[0mGET /response?nac=test%20&trans=test2&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=1&nivel=5 [32m200 [0m4.084 ms - 2[0m
+10,1
+Audio Asignado: 2.1
+[0mGET /?audiosCompleted=10,1 [32m200 [0m123.226 ms - -[0m
+invalid data!
+[0mGET /response?nac=test3%20&trans=&genero=F&provincia=Buenos%20Aires&edad=18%2025&oracion=2&nivel=1 [32m200 [0m1.376 ms - 7[0m
+10,1,2
+Audio Asignado: 3.2
+[0mGET /?audiosCompleted=10,1,2 [32m200 [0m117.524 ms - -[0m
+Upcoming response from: 
+::ffff:190.191.8.237
+::ffff:190.191.8.237
+infoPersonal: 
+	Oracion: 10
+	Nivel: 5
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Buenos Aires
+Rtas 
+	Lang: Chino / Japones
+	transcription: Argentina algo 
+1508460663684
+[0mGET /response?nac=Chino%20/%20Japones&trans=Argentina%20algo%20&genero=F&provincia=Buenos%20Aires&edad=26%2035&oracion=10&nivel=5 [32m200 [0m4.718 ms - 2[0m
+10
+Audio Asignado: 1.3
+[0mGET /?audiosCompleted=10 [32m200 [0m110.136 ms - -[0m
+Upcoming response from: 
+::ffff:190.191.8.237
+::ffff:190.191.8.237
+infoPersonal: 
+	Oracion: 1
+	Nivel: 3
+	Genero: F
+	Rango Edad: 26 35
+	Provincia: Buenos Aires
+Rtas 
+	Lang: catellano
+	transcription: recorriendo la esquiena
+1508460695994
+[0mGET /response?nac=catellano&trans=recorriendo%20la%20esquiena&genero=F&provincia=Buenos%20Aires&edad=26%2035&oracion=1&nivel=3 [32m200 [0m5.245 ms - 2[0m
+error: Forever detected script was killed by signal: SIGKILL
