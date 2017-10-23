@@ -41,7 +41,7 @@ router.get('/', function(req, res, next) {
 });
 
 var oraciones = 10;
-var niveles = 6;
+var niveles = 5;
 var refillAudioBag = function(string){
     //re feo
     for (var i = 1; i <= oraciones; i++) {
